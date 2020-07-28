@@ -24,12 +24,25 @@ https://docs.oracle.com/en/java/javase/11/docs/api/jdk.jdi/com/sun/jdi/LocalVari
  javac  -g examples/JDIExampleDebuggee.java
  javac  -g examples/Debuggee.java
 
-
+`
 java -cp /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/tools.jar:. edu.suny.jdi.JDebugger JDIExampleDebuggee
-
+`
 
 The idea is to record and output each steps along the way
 
 
 Tasks
 Add maven
+
+Tools.jar has been migrated to a module in java 11 Module jdk.jdi (as far as i know)
+
+
+
+in target folder, make sure to have 
+`
+java -cp ../target/jracer-1.0-SNAPSHOT.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/tools.jar  edu.suny.jdi.JDebugger Test'
+`
+
+`
+ java -cp jracer-1.0-SNAPSHOT-jar-with-dependencies.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/tools.jar  edu.suny.jdi.JDebugger Test &> ../test_tace_1.json
+ `

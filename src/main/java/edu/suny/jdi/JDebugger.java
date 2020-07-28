@@ -9,9 +9,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.*;
+import javax.json.*;
 
 public class JDebugger {
   private String debugClassName;
+
+  public JDI2JSON jdi2json;
 
   public VirtualMachine vm;
   public EventRequestManager mgr;
@@ -47,8 +50,7 @@ public class JDebugger {
     Map<String, Connector.Argument> arguments = launchingConnector.defaultArguments();
 
     arguments.get("main").setValue(debugClassName);
-    arguments.get("options").setValue(
-        "-cp /Users/user/Documents/GitHub/Debugger/JDebugger/examples/  ");
+    arguments.get("options").setValue("-cp .  ");
 
     /*for (Map.Entry<String, Connector.Argument> entry : arguments.entrySet())
       System.out.println(entry.getKey() + " " + entry.getValue());
@@ -82,6 +84,7 @@ public class JDebugger {
       bpReq.enable();
     }
   }
+
   void setEventRequests() {
     mgr = vm.eventRequestManager();
     ExceptionRequest excReq = mgr.createExceptionRequest(null, true, true);
@@ -115,9 +118,8 @@ public class JDebugger {
 
   StepRequest request = null;
 
-  private ThreadReference handleEvent(Event event) {
+  private void handleEvent(Event event) {
     System.out.println("===>>>" + event);
-    ThreadReference theThread = null;
     if (event instanceof ClassPrepareEvent) {
       classPrepareEvent((ClassPrepareEvent) event);
     } else if (event instanceof VMDeathEvent) {
@@ -130,6 +132,7 @@ public class JDebugger {
       //  System.out.println("12");
       request.disable();
     }
+
     if (request != null) {
       // System.out.println("11");
       mgr.deleteEventRequest(request);
@@ -154,15 +157,20 @@ public class JDebugger {
     }
 
     if (event instanceof LocatableEvent) {
-      // event.request().disable();
-      displayVariables((LocatableEvent) event);
+      handleEvent2(event);
     }
 
     System.out.println("\n\n");
-
-    return theThread;
   }
 
+  void handleEvent2(Event event) {
+    ThreadReference theThread = ((LocatableEvent) event).thread();
+
+    Location loc = ((LocatableEvent) event).location();
+    for (JsonObject ep : jdi2json.convertExecutionPoint(event, loc, theThread)) {
+      System.out.println(ep);
+    }
+  }
   /**
    * Displays the visible variables
    * @param event
@@ -185,7 +193,10 @@ public class JDebugger {
           System.out.println("Variables at " + stackFrame.location().toString() + " > ");
           for (Map.Entry<LocalVariable, Value> entry : visibleVariables.entrySet()) {
             System.out.println("\t" + entry.getKey().name() + " = " + entry.getValue()
-                + "===" + entry.getKey().type());
+                + " == " + entry.getKey().type());
+            if (entry.getValue() instanceof ObjectReference)
+              System.out.println("\t\t id" + ((ObjectReference) entry.getValue()).uniqueID());
+            //(ObjectReference) getValues
           }
         }
       }
@@ -223,8 +234,41 @@ public class JDebugger {
         System.out.println("AIE!" + rt.name());
     }
   }
-
   public static void main(String[] args) throws Exception {
+    System.out.println("Debugging" + args[0]);
+    JDebugger debuggerInstance = new JDebugger();
+    debuggerInstance.setDebugClass(args[0]);
+
+    VirtualMachine vm = null;
+
+    char[] buf = new char[520];
+    InputStreamReader reader = null;
+    OutputStreamWriter writer = new OutputStreamWriter(System.out);
+
+    try {
+      vm = debuggerInstance.connectAndLaunchVM();
+
+      debuggerInstance.jdi2json =
+          new JDI2JSON(vm, vm.process().getInputStream(), vm.process().getErrorStream());
+      debuggerInstance.setEventRequests();
+
+      EventSet eventSet = null;
+
+      while ((eventSet = vm.eventQueue().remove()) != null) {
+        for (Event event : eventSet) {
+          debuggerInstance.handleEvent(event);
+        }
+
+        eventSet.resume();
+      }
+    } catch (VMDisconnectedException e) {
+      System.out.println("Virtual Machine is disconnected.");
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  public static void oldmain(String[] args) throws Exception {
     System.out.println("Debugging" + args[0]);
     JDebugger debuggerInstance = new JDebugger();
     debuggerInstance.setDebugClass(args[0]);
