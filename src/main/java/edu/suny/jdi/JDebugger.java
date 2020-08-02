@@ -61,16 +61,6 @@ public class JDebugger {
   }
 
   /**
-   * Creates a request to prepare the debug class, add filter as the debug class and enables it
-   * @param vm
-   */
-  public void enableClassPrepareRequest() {
-    ClassPrepareRequest classPrepareRequest = vm.eventRequestManager().createClassPrepareRequest();
-    classPrepareRequest.addClassFilter(debugClassName);
-    classPrepareRequest.enable();
-  }
-
-  /**
    * Sets the break points at the line numbers mentioned in breakPointLines array
    * @param vm
    * @param event
@@ -87,30 +77,28 @@ public class JDebugger {
 
   void setEventRequests() {
     mgr = vm.eventRequestManager();
+
     ExceptionRequest excReq = mgr.createExceptionRequest(null, true, true);
     excReq.setSuspendPolicy(EventRequest.SUSPEND_ALL);
-
+    excReq.addClassFilter(debugClassName);
     excReq.enable();
 
     MethodEntryRequest menr = mgr.createMethodEntryRequest();
-
-    menr.setSuspendPolicy(EventRequest.SUSPEND_EVENT_THREAD);
+    menr.setSuspendPolicy(EventRequest.SUSPEND_ALL);
     menr.addClassFilter(debugClassName);
     menr.enable();
 
     MethodExitRequest mexr = mgr.createMethodExitRequest();
-
-    mexr.setSuspendPolicy(EventRequest.SUSPEND_EVENT_THREAD);
+    mexr.setSuspendPolicy(EventRequest.SUSPEND_ALL);
     mexr.addClassFilter(debugClassName);
     mexr.enable();
 
     ThreadDeathRequest tdr = mgr.createThreadDeathRequest();
     tdr.setSuspendPolicy(EventRequest.SUSPEND_ALL);
-
+    // tdr.addClassFilter(debugClassName); <-- this events can not be filtered by the class
     tdr.enable();
 
     ClassPrepareRequest cpr = mgr.createClassPrepareRequest();
-
     cpr.setSuspendPolicy(EventRequest.SUSPEND_ALL);
     cpr.addClassFilter(debugClassName);
     cpr.enable();
@@ -265,55 +253,6 @@ public class JDebugger {
       System.out.println("Virtual Machine is disconnected.");
     } catch (Exception e) {
       e.printStackTrace();
-    }
-  }
-
-  public static void oldmain(String[] args) throws Exception {
-    System.out.println("Debugging" + args[0]);
-    JDebugger debuggerInstance = new JDebugger();
-    debuggerInstance.setDebugClass(args[0]);
-
-    VirtualMachine vm = null;
-
-    char[] buf = new char[520];
-    InputStreamReader reader = null;
-    OutputStreamWriter writer = new OutputStreamWriter(System.out);
-
-    try {
-      vm = debuggerInstance.connectAndLaunchVM();
-      reader = new InputStreamReader(vm.process().getInputStream());
-
-      debuggerInstance.setEventRequests();
-
-      EventSet eventSet = null;
-
-      while ((eventSet = vm.eventQueue().remove()) != null) {
-        for (Event event : eventSet) {
-          debuggerInstance.handleEvent(event);
-        }
-
-        eventSet.resume();
-
-        while (reader.ready()) {
-          int l = reader.read(buf);
-          if (l > -1)
-            System.out.println("-->" + new String(buf, 0, l));
-          else
-            break;
-        }
-      }
-    } catch (VMDisconnectedException e) {
-      System.out.println("Virtual Machine is disconnected.");
-    } catch (Exception e) {
-      e.printStackTrace();
-    } finally {
-      while (reader.ready()) {
-        int l = reader.read(buf);
-        if (l > -1)
-          System.out.println("-->" + new String(buf, 0, l));
-        else
-          break;
-      }
     }
   }
 }

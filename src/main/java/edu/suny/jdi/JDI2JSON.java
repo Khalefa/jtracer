@@ -12,7 +12,9 @@ public class JDI2JSON {
     InputStreamReader vm_link;
     StringWriter contents = new java.io.StringWriter();
     String getContents() {
-      return contents.toString();
+      String toret = contents.toString();
+      contents = new java.io.StringWriter(); // this is added to remove the old returned output
+      return toret;
     }
     InputPuller(InputStream ir) {
       try {
@@ -89,6 +91,8 @@ public class JDI2JSON {
 
     JsonObjectBuilder result = Json.createObjectBuilder();
     result.add("stdout", stdout.getContents());
+    result.add("stderr", stderr.getContents());
+
     if (e instanceof MethodEntryEvent) {
       result.add("event", "call");
       // frame_stack.add(frame_ticker++);
@@ -97,18 +101,14 @@ public class JDI2JSON {
       returnValue = convertValue(((MethodExitEvent) e).returnValue());
       result.add("event", "return");
       result.add("line", loc.lineNumber());
-    } else if (e instanceof BreakpointEvent || e instanceof StepEvent) {
+    } else if (e instanceof BreakpointEvent) {
+      result.add("event", "step_line");
+      result.add("line", loc.lineNumber());
+    } else if (e instanceof StepEvent) {
       result.add("event", "step_line");
       result.add("line", loc.lineNumber());
     } else if (e instanceof ExceptionEvent) {
-      // we could compare this with null to see if it was caught.
-      // Location katch = ((ExceptionEvent)e).catchLocation();
-
-      // but it turns out we don't care, since either the code
-      // keeps going or just halts appropriately anyway.
-
       result.add("event", "exception");
-
       result.add("exception_msg", exceptionMessage((ExceptionEvent) e));
     }
 
