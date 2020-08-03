@@ -155,9 +155,8 @@ public class JDebugger {
     ThreadReference theThread = ((LocatableEvent) event).thread();
 
     Location loc = ((LocatableEvent) event).location();
-    for (JsonObject ep : jdi2json.convertExecutionPoint(event, loc, theThread)) {
-      System.out.println(ep);
-    }
+    JsonObject ep = jdi2json.convertExecutionPoint(event, loc, theThread);
+    System.out.println(ep);
   }
   /**
    * Displays the visible variables

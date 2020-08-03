@@ -1,10 +1,10 @@
-
 package edu.suny.jdi;
 import com.sun.jdi.*;
 import com.sun.jdi.event.*;
 import com.sun.jdi.request.*;
 import java.io.*;
 import java.util.*;
+import java.util.stream.*;
 import javax.json.*;
 
 public class JDI2JSON {
@@ -40,8 +40,6 @@ public class JDI2JSON {
   private VirtualMachine vm;
   private InputPuller stdout, stderr;
   private JsonObject last_ep = null;
-  private TreeMap<Long, ObjectReference> heap;
-  private TreeSet<Long> heap_done;
 
   /*    private ArrayList<Long> frame_stack = new ArrayList<Long>();*/
   private long frame_ticker = 0;
@@ -71,7 +69,7 @@ public class JDI2JSON {
     userlogged.append(S).append("\n");
   }
 
-  public JsonObject getAllFrames(ThreadReference t, JsonValue returnValue) {
+  public JsonArray getAllFrames(ThreadReference t, JsonValue returnValue) {
     JsonObjectBuilder result = Json.createObjectBuilder();
     JsonArrayBuilder frames = Json.createArrayBuilder();
     StackFrame lastNonUserFrame = null;
@@ -98,8 +96,8 @@ public class JDI2JSON {
 
       throw new RuntimeException("ITSE");
     }
-    result.add("frames", frames);
-    return result.build();
+    // result.add("frames", frames);
+    return frames.build();
   }
 
   public JsonObject getlocalvariables_fromframe(ThreadReference t) {
@@ -113,7 +111,6 @@ public class JDI2JSON {
     return frame.build();
   }
 
-  JsonObject last_localvariable;
   // returns null when nothing changed since the last time
   // (or when only event type changed and new value is "step_line")
 
@@ -141,32 +138,33 @@ public class JDI2JSON {
   JsonObject getLoc(Location loc) {
     JsonObjectBuilder result = Json.createObjectBuilder();
     try {
-      result.add("lineno", loc.lineNumber());
       result.add("source", loc.sourceName());
       result.add("name", loc.method().name());
+      result.add("lineno", loc.lineNumber());
+
     } catch (com.sun.jdi.AbsentInformationException e) {
     }
 
     return result.build();
   }
 
-  public ArrayList<JsonObject> convertExecutionPoint(Event e, Location loc, ThreadReference t) {
+  TreeMap<Long, ObjectReference> heap;
+  TreeSet<Long> heap_done;
+
+  public JsonObject convertExecutionPoint(Event e, Location loc, ThreadReference t) {
     stdout.pull();
     stderr.pull();
 
-    // System.out.println(e);
-
-    ArrayList<JsonObject> results = new ArrayList<>();
+    JsonObjectBuilder result = Json.createObjectBuilder();
 
     if (loc.method().name().indexOf("access$") >= 0)
-      return results; // don't visualize synthetic access$000 methods
+      return result.build(); // don't visualize synthetic access$000 methods
 
     heap_done = new TreeSet<Long>();
     heap = new TreeMap<>();
 
     JsonValue returnValue = null;
 
-    JsonObjectBuilder result = Json.createObjectBuilder();
     result.add("stdout", stdout.getContents());
     result.add("stderr", stderr.getContents());
 
@@ -188,31 +186,31 @@ public class JDI2JSON {
       result.add("loc", getLoc(loc));
     }
 
-    if (e instanceof StepEvent) {
-      // compute the difference between current frame and the previous one
-      // we need to make sure we are in the same dataframe
-      // we will simply track then umber of
+    // if (e instanceof StepEvent) {
+    // compute the difference between current frame and the previous one
+    // we need to make sure we are in the same dataframe
+    // we will simply track then umber of
 
-      // for now just get it compile
-      result.add("frames", getAllFrames(t, returnValue));
-    }
+    // for now just get it compile
+    result.add("stack", getAllFrames(t, returnValue));
+    //}
     // if (e instanceof MethodExitEvent)
     //  frame_stack.remove(frame_stack.size()-1);
 
-    // result.add("globals", statics);
+    result.add("globals", addGlobals());
 
     JsonObjectBuilder heapDescription = Json.createObjectBuilder();
     convertHeap(heapDescription);
     result.add("heap", heapDescription);
 
     JsonObject this_ep = result.build();
+    JsonObject d = diff(last_ep, this_ep);
 
-    {
-      results.add(this_ep);
-      last_ep = this_ep;
-    }
+    // results.add(this_ep);
+    last_ep = this_ep;
+    // comoupte teh difference
 
-    return results;
+    return result.build();
   }
 
   public static String[] builtin_packages = {
@@ -274,11 +272,11 @@ public class JDI2JSON {
         } else if (me.getKey().equals("stack_to_render")) {
           JsonArray old_stack_to_render = (JsonArray) me.getValue();
           JsonObject old_top_frame = (JsonObject) (old_stack_to_render.get(0));
-          JsonObject old_top_frame_vars = (JsonObject) (old_top_frame.get("encoded_locals"));
+          JsonObject old_top_frame_vars = (JsonObject) (old_top_frame.get("locals"));
 
           /*result.add("stack_to_render",
               jsonModifiedArray(old_stack_to_render, 0,
-                  jsonModifiedObject(jsonModifiedObject(old_top_frame, "encoded_locals",
+                  jsonModifiedObject(jsonModifiedObject(old_top_frame, "locals",
                       jsonModifiedObject(old_top_frame_vars, "__return__", returned)))));
         */} else
             result.add(me.getKey(), me.getValue());
@@ -387,12 +385,12 @@ public class JDI2JSON {
     } catch (AbsentInformationException ex) {
       // System.out.println("AIE: can't list variables in " + sf.location());
     }
-    if (returnValue != null && (showVoid || returnValue != convertVoid)) {
+    if (returnValue != null) {
       result.add("__return__", returnValue);
     }
     return Json.createObjectBuilder()
         .add("func_name", sf.location().method().name() + ":" + sf.location().lineNumber())
-        .add("encoded_locals", result); // frame_stack.get(level));
+        .add("locals", result); // frame_stack.get(level));
   }
 
   // used to show a single non-user frame when there is
@@ -401,7 +399,7 @@ public class JDI2JSON {
     return Json.createObjectBuilder()
         .add("func_name",
             "\u22EE\n" + sf.location().declaringType().name() + "." + sf.location().method().name())
-        .add("encoded_locals", Json.createObjectBuilder()) //.add("...", "..."))
+        .add("locals", Json.createObjectBuilder()) //.add("...", "..."))
         ;
   }
 
@@ -524,8 +522,6 @@ public class JDI2JSON {
     return result.build();
   }
 
-  private JsonArray convertVoid = jsonArray("VOID");
-
   private JsonArray jsonArray(Object... args) {
     JsonArrayBuilder result = Json.createArrayBuilder();
     for (Object o : args) {
@@ -539,35 +535,36 @@ public class JDI2JSON {
     return result.build();
   }
 
+  // return a pair (type, value as string)
   private JsonValue convertValue(Value v) {
     if (v instanceof BooleanValue) {
       if (((BooleanValue) v).value() == true)
-        return JsonValue.TRUE;
+        return jsonArray("boolean", JsonValue.TRUE);
       else
-        return JsonValue.FALSE;
+        return jsonArray("boolean", JsonValue.FALSE);
     } else if (v instanceof ByteValue)
-      return jsonInt(((ByteValue) v).value());
+      return jsonArray("byte", jsonInt(((ByteValue) v).value()));
     else if (v instanceof ShortValue)
-      return jsonInt(((ShortValue) v).value());
+      return jsonArray("short", jsonInt(((ShortValue) v).value()));
     else if (v instanceof IntegerValue)
-      return jsonInt(((IntegerValue) v).value());
+      return jsonArray("int", jsonInt(((IntegerValue) v).value()));
     // some longs can't be represented as doubles, they won't survive the json conversion
     else if (v instanceof LongValue)
-      return jsonArray("NUMBER-LITERAL", jsonString("" + ((LongValue) v).value()));
+      return jsonArray("long", jsonString("" + ((LongValue) v).value()));
     // floats who hold integer values will end up as integers after json conversion
     // also, this lets us pass "Infinity" and other IEEE non-numbers
     else if (v instanceof FloatValue)
-      return jsonArray("NUMBER-LITERAL", jsonString("" + ((FloatValue) v).value()));
+      return jsonArray("float", jsonString("" + ((FloatValue) v).value()));
     else if (v instanceof DoubleValue)
-      return jsonArray("NUMBER-LITERAL", jsonString("" + ((DoubleValue) v).value()));
+      return jsonArray("double", jsonString("" + ((DoubleValue) v).value()));
     else if (v instanceof CharValue)
-      return jsonArray("CHAR-LITERAL", jsonString(((CharValue) v).value() + ""));
+      return jsonArray("char", jsonString(((CharValue) v).value() + ""));
     else if (v instanceof VoidValue)
-      return convertVoid;
+      return jsonArray("void");
     else if (!(v instanceof ObjectReference))
       return JsonValue.NULL; // not a hack
     else if (showStringsAsValues && v instanceof StringReference)
-      return jsonString(((StringReference) v).value());
+      return jsonArray("string", jsonString(((StringReference) v).value()));
     else {
       ObjectReference obj = (ObjectReference) v;
       heap.put(obj.uniqueID(), obj);
@@ -694,9 +691,72 @@ public class JDI2JSON {
   // and if only the frame ids changed, we should treat it as if nothing changed
 
   // I am not sure if this would work
+  static public Set<String> difference(final Set<String> set1, final Set<String> set2) {
+    return set1.stream().filter(n -> !set2.contains(n)).collect(Collectors.toSet());
+  }
+
+  static public Set<String> intersect(final Set<String> set1, final Set<String> set2) {
+    return set1.stream().filter(n -> set2.contains(n)).collect(Collectors.toSet());
+  }
+
+  private JsonObject diff2(JsonObject a, JsonObject b) {
+    if (b == null)
+      return a;
+
+    Set<String> akeys = a.keySet();
+    Set<String> bkeys = b.keySet();
+    // get those keys in a and b
+    Set<String> both = intersect(akeys, bkeys);
+    Set<String> add = difference(akeys, bkeys);
+    Set<String> del = difference(bkeys, akeys);
+    JsonObjectBuilder result = Json.createObjectBuilder();
+    JsonArrayBuilder jsonadd = Json.createArrayBuilder();
+    JsonArrayBuilder jsonremove = Json.createArrayBuilder();
+    JsonArrayBuilder jsonupdate = Json.createArrayBuilder();
+
+    for (String s : add) {
+      jsonadd.add(a.getJsonObject(s));
+    }
+
+    for (String s : del) {
+      jsonremove.add(b.getJsonObject(s));
+    }
+
+    for (String s : both) {
+      JsonObject t1 = a.getJsonObject(s);
+      JsonObject t2 = b.getJsonObject(s);
+      if (t1.equals(t2))
+        continue;
+      jsonupdate.add(diff2(t1, t2));
+    }
+
+    result.add("add", jsonadd);
+    result.add("remove", jsonremove);
+    result.add("update", jsonupdate);
+    return result.build();
+  }
+
   private JsonObject diff(JsonObject old_ep, JsonObject new_ep) {
     if (old_ep == null)
       return new_ep;
+
+    JsonObjectBuilder result = Json.createObjectBuilder();
+
+    result.add("stdout", new_ep.getString("stdout"));
+    result.add("stderr", new_ep.getString("stderr"));
+    JsonArray ost = old_ep.getJsonArray("stack");
+    JsonArray nst = new_ep.getJsonArray("stack");
+
+    // now compare the frames
+    int size = Math.min(ost.size(), nst.size());
+    for (int i = size; i > 0; i--) {
+      JsonObject a = ost.getJsonObject(ost.size() - i);
+      JsonObject b = nst.getJsonObject(nst.size() - i);
+      JsonObject aa = a.getJsonObject("locals");
+      JsonObject bb = b.getJsonObject("locals");
+      result.add("locals", diff2(aa, bb));
+    }
+
     return new_ep; // TODO
   }
 }
