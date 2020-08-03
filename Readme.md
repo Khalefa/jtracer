@@ -21,7 +21,7 @@ The idea is to record and output each steps along the way
 -run rest api 
 -Java allows debugging a running program and connect to it. Check jhsdb https://static.rainfocus.com/oracle/oow16/sess/14627958356770011JJj/ppt/JavaOne2016_CON3733.pdf
 -WatchpointRequest (I think this may be more efficient to monitor fields)
-
+-Test with lambda, multiple threads and asynchronous functions (callbacks)
 # Usage
 
 in target folder, make sure to have 
@@ -41,6 +41,8 @@ mvn exec:java -Dexec.mainClass="edu.suny.jdi.JDebugger" -Dexec.args="Test"
 `
 
 Always make sure class in the current directory and it has been compiled with 
+-g
+
 
 
 

@@ -1,5 +1,3 @@
 edu/suny/jdi/JDebugger.class
-edu/suny/jdi/JDI2JSON$1stHandler.class
 edu/suny/jdi/JDI2JSON$InputPuller.class
-edu/suny/jdi/JDI2JSON$1Help.class
 edu/suny/jdi/JDI2JSON.class
