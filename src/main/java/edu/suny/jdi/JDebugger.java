@@ -153,10 +153,9 @@ public class JDebugger {
 
   void handleEvent2(Event event) {
     ThreadReference theThread = ((LocatableEvent) event).thread();
-
     Location loc = ((LocatableEvent) event).location();
     JsonObject ep = jdi2json.convertExecutionPoint(event, loc, theThread);
-    System.out.println(ep);
+    // System.out.println(ep);
   }
   /**
    * Displays the visible variables
@@ -202,7 +201,6 @@ public class JDebugger {
     // if (event.location().toString().contains(
     //      debugClassName + ":" + breakPointLines[breakPointLines.length - 1])) {
 
-    System.out.println("14");
     StepRequest stepRequest = vm.eventRequestManager().createStepRequest(
         ((ClassPrepareEvent) (event)).thread(), StepRequest.STEP_LINE, StepRequest.STEP_OVER);
     stepRequest.enable();
