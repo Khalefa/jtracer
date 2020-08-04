@@ -417,62 +417,18 @@ public class JDI2JSON {
     }
   }
 
-  List<String> wrapperTypes = new ArrayList<String>(
-      Arrays.asList("Byte Short Integer Long Float Double Character Boolean".split(" ")));
-
-  private JsonValue convertObject(ObjectReference obj, boolean fullVersion) {
-    if (showStringsAsValues && obj.referenceType().name().startsWith("java.lang.")
-        && wrapperTypes.contains(obj.referenceType().name().substring(10))) {
-      return convertValue(obj.getValue(obj.referenceType().fieldByName("value")));
-    }
-
-    JsonArrayBuilder result = Json.createArrayBuilder();
-    // TODO try this
-    // abbreviated versions are for references to objects
-    if (!fullVersion) { //
-
-      result.add("REF").add(obj.uniqueID());
-      heap.put(obj.uniqueID(), obj);
-      return result.build();
-    }
-
-    // full versions are for describing the objects themselves,
-    // in the heap
-
-    else if (obj instanceof ArrayReference) {
-      ArrayReference ao = (ArrayReference) obj;
-      int L = ao.length();
-
-      heap_done.add(obj.uniqueID());
-
-      JsonArrayBuilder array = Json.createArrayBuilder();
-
-      for (int i = 0; i < L; i++) {
-        array.add(convertValue(ao.getValue(i)));
-      }
-      result.add(/*"Array",*/ array);
-      return result.build();
-    }
-
-    else if (obj instanceof StringReference) {
-      return Json.createArrayBuilder()
-          .add("HEAP_PRIMITIVE")
-          .add("String")
-          .add(jsonString(((StringReference) obj).value()))
-          .build();
-    }
-
-    // now deal with Objects.
-    heap_done.add(obj.uniqueID());
-    result.add("INSTANCE");
+  private JsonValue getfullname(ObjectReference obj) {
+    String fullName = "";
     if (obj.referenceType().name().startsWith("java.lang.")
         && wrapperTypes.contains(obj.referenceType().name().substring(10))) {
-      result.add(obj.referenceType().name().substring(10));
-      result.add(jsonArray("___NO_LABEL!___", // jsonArray("NO-LABEL"), // don't show a label or
-                                              // label cell for wrapper instance field
-          convertValue(obj.getValue(obj.referenceType().fieldByName("value")))));
+      JsonObjectBuilder result = Json.createObjectBuilder();
+      result.add("name", obj.referenceType().name().substring(10));
+      result.add("___NO_LABEL!___", // jsonArray("NO-LABEL"), // don't show a label or
+                                    // label cell for wrapper instance field
+          convertValue(obj.getValue(obj.referenceType().fieldByName("value"))));
+      return result.build();
     } else {
-      String fullName = obj.referenceType().name();
+      fullName = obj.referenceType().name();
       if (fullName.indexOf("$") > 0) {
         // inner, local, anonymous or lambda class
         if (fullName.contains("$$Lambda")) {
@@ -496,22 +452,74 @@ public class JDI2JSON {
             fullName = "local class " + fullName.substring(1);
         }
       }
-      result.add(fullName);
+    }
+    return Json.createValue(fullName);
+  }
+
+  List<String> wrapperTypes = new ArrayList<String>(
+      Arrays.asList("Byte Short Integer Long Float Double Character Boolean".split(" ")));
+
+  private JsonValue convertObject(ObjectReference obj, boolean fullVersion) {
+    if (showStringsAsValues && obj.referenceType().name().startsWith("java.lang.")
+        && wrapperTypes.contains(obj.referenceType().name().substring(10))) {
+      return convertValue(obj.getValue(obj.referenceType().fieldByName("value")));
+    }
+
+    // JsonArrayBuilder result = Json.createArrayBuilder();
+    JsonObjectBuilder result = Json.createObjectBuilder();
+    // TODO try this
+    // abbreviated versions are for references to objects
+    if (!fullVersion) { //
+
+      JsonValue v = Json.createObjectBuilder().add("ref", obj.uniqueID()).build();
+
+      heap.put(obj.uniqueID(), obj);
+      return v;
+    }
+
+    // full versions are for describing the objects themselves,
+    // in the heap
+
+    else if (obj instanceof ArrayReference) {
+      ArrayReference ao = (ArrayReference) obj;
+      int L = ao.length();
+
+      heap_done.add(obj.uniqueID());
+
+      JsonObjectBuilder array = Json.createObjectBuilder();
+
+      for (int i = 0; i < L; i++) {
+        array.add("" + i, convertValue(ao.getValue(i)));
+      }
+      //  result.add(/*"Array",*/ array);
+      return array.build(); // result.build();
+    }
+
+    else if (obj instanceof StringReference) {
+      return Json.createArrayBuilder()
+          .add("HEAP_PRIMITIVE")
+          .add("String")
+          .add(jsonString(((StringReference) obj).value()))
+          .build();
+    } else {
+      // now deal with Objects.
+      heap_done.add(obj.uniqueID());
+      result.add("instance", getfullname(obj));
     }
     if (showGuts(obj.referenceType())) {
       // fields: -inherited -hidden +synthetic
       // visibleFields: +inherited -hidden +synthetic
       // allFields: +inherited +hidden +repeated_synthetic
-      for (Map.Entry<Field, Value> me :
-          obj.getValues(showAllFields ? obj.referenceType().allFields()
-                                      : obj.referenceType().visibleFields())
-              .entrySet()) {
-        if (!me.getKey().isStatic() && (showAllFields || !me.getKey().isSynthetic()))
-          result.add(Json.createArrayBuilder()
-                         .add((showAllFields ? me.getKey().declaringType().name() + "." : "")
-                             + me.getKey().name())
-                         .add(convertValue(me.getValue())));
+      JsonObjectBuilder fields = Json.createObjectBuilder();
+      for (Map.Entry<Field, Value> me : obj.getValues(obj.referenceType().allFields()).entrySet()) {
+        String name = me.getKey().name();
+        //   (showAllFields ? me.getKey().declaringType().name() + "." : "") + me.getKey().name();
+
+        fields.add(name, convertValue(me.getValue()));
       }
+      result.add("fields", fields);
+
+      // result.add("value",
     }
     return result.build();
   }
@@ -733,6 +741,10 @@ public class JDI2JSON {
       JsonValue b = nst.get(nst.size() - i);
       result.add(diff2(a, b));
     }
+    if (nst.size() > ost.size()) {
+      for (int i = 0; i < nst.size() - ost.size(); i++)
+        result.add(Json.createObjectBuilder().add("add", nst.get(i)));
+    }
     return result.build();
   }
 
@@ -750,18 +762,17 @@ public class JDI2JSON {
     JsonArrayBuilder jsonadd = Json.createArrayBuilder();
     JsonArrayBuilder jsonremove = Json.createArrayBuilder();
     JsonArrayBuilder jsonupdate = Json.createArrayBuilder();
-
+    int added = 0, removed = 0, updated = 0;
     for (String s : add) {
       JsonValue v = b.get(s);
-      // System.out.println("add" + s + "\t" + v);
-
       jsonadd.add(Json.createObjectBuilder().add(s, v));
+      added = added + 1;
     }
 
     for (String s : del) {
-      //  System.out.println("del" + s);
       JsonValue v = a.get(s);
       jsonremove.add(Json.createObjectBuilder().add(s, v));
+      removed = removed + 1;
     }
 
     for (String s : both) {
@@ -774,11 +785,14 @@ public class JDI2JSON {
         continue;
       JsonValue v = diff2(t1, t2);
       jsonupdate.add(Json.createObjectBuilder().add(s, v));
+      updated = updated + 1;
     }
-
-    result.add("add", jsonadd);
-    result.add("remove", jsonremove);
-    result.add("update", jsonupdate);
+    if (added > 0)
+      result.add("add", jsonadd);
+    if (removed > 0)
+      result.add("remove", jsonremove);
+    if (updated > 0)
+      result.add("update", jsonupdate);
     return result.build();
   }
 
@@ -813,7 +827,7 @@ public class JDI2JSON {
       JsonObject bb = b.getJsonObject("locals");
       result.add("stack.locals", diff2(aa, bb));
     }*/
-    result.add("stack.locals", diff2(ost, nst));
+    result.add("stack", diff2(ost, nst));
 
     // result.add("globals", diff2(old_ep.get("globals"), new_ep.get("globals")));
     result.add("heap", diff2(old_ep.get("heap"), new_ep.get("heap")));
