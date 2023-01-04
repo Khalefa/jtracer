@@ -1,48 +1,37 @@
 
 
-#old
- javac  -cp /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/tools.jar:. edu/suny/jdi/JDebugger.java
+
+Record and output each steps in the executed programs
 
 
 
-`
-java -cp /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/tools.jar:. edu.suny.jdi.JDebugger JDIExampleDebuggee
-`
 
-The idea is to record and output each steps along the way
+# Build
 
-
-# Tasks 
-- Add maven (done)
-- Tools.jar has been migrated to a module in java 11 Module jdk.jdi (as far as i know)
-- add sqlite (or duckdb) or http://jsondb.io/
--run rest api 
--Java allows debugging a running program and connect to it. Check jhsdb https://static.rainfocus.com/oracle/oow16/sess/14627958356770011JJj/ppt/JavaOne2016_CON3733.pdf
--WatchpointRequest (I think this may be more efficient to monitor fields)
--Test with lambda, multiple threads and asynchronous functions (callbacks)
-
+        mvn clean package
 
 # Usage
 
-in  the main directory. 
+In the main directory, to generate some java classes for test.
 
 
                 javac  -g examples/JDIExampleDebuggee.java 
                 javac  -g examples/Debuggee.java
-`
-java -cp ../target/jracer-1.0-SNAPSHOT.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/tools.jar  edu.suny.jdi.JDebugger Test
-`
 
-`
- java -cp jracer-1.0-SNAPSHOT-jar-with-dependencies.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/tools.jar  edu.suny.jdi.JDebugger Test &> ../test_tace_1.json
- `
+To run, go to the debugee class directory (i.e.  examples directory to test the examples)  
 
-More easily,
-`
-mvn exec:java -Dexec.mainClass="edu.suny.jdi.JDebugger" -Dexec.args="Test"
-`
+Then, run the following comand.
 
-Always make sure class in the current directory and it has been compiled with 
+                
+        java -cp ../target/jtracer-1.0-SNAPSHOT-jar-with-dependencies.jar:../lib/jdk-1.8.0.jar  edu.suny.jdi.JDebugger Test
+
+
+More easily, you can copy the class file to a the root directory, then you can run
+    
+    mvn exec:java -Dexec.mainClass="edu.suny.jdi.JDebugger" -Dexec.args="Test"
+
+
+Note: Always make sure the class file is in the current directory and it has been compiled with 
 -g
 
 
@@ -61,9 +50,18 @@ Stack variables, and specifically their values at your breakpoint, are associate
 
 # Working with classes
 
-https://stackoverflow.com/questions/59010599/jdi-how-to-get-the-objectreference-value
-https://docs.oracle.com/en/java/javase/11/docs/api/jdk.jdi/com/sun/jdi/ObjectReference.html
+- https://stackoverflow.com/questions/59010599/jdi-how-to-get-the-objectreference-value
+- https://docs.oracle.com/en/java/javase/11/docs/api/jdk.jdi/com/sun/jdi/ObjectReference.html
+- https://docs.oracle.com/en/java/javase/11/docs/api/jdk.jdi/com/sun/jdi/LocalVariable.html
 
 
-https://docs.oracle.com/en/java/javase/11/docs/api/jdk.jdi/com/sun/jdi/LocalVariable.html
+# Tasks 
+
+- Add maven (done)
+- Tools.jar has been migrated to a module in java 11 Module jdk.jdi (as far as i know)
+- add sqlite (or duckdb) or http://jsondb.io/
+-run rest api 
+-Java allows debugging a running program and connect to it. Check jhsdb https://static.rainfocus.com/oracle/oow16/sess/14627958356770011JJj/ppt/JavaOne2016_CON3733.pdf
+-WatchpointRequest (I think this may be more efficient to monitor fields)
+-Test with lambda, multiple threads and asynchronous functions (callbacks)
 
