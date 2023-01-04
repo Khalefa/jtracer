@@ -1,11 +1,9 @@
 
 
-
+#old
  javac  -cp /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/tools.jar:. edu/suny/jdi/JDebugger.java
 
 
- javac  -g examples/JDIExampleDebuggee.java
- javac  -g examples/Debuggee.java
 
 `
 java -cp /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/tools.jar:. edu.suny.jdi.JDebugger JDIExampleDebuggee
@@ -14,19 +12,23 @@ java -cp /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/to
 The idea is to record and output each steps along the way
 
 
-# Tasks
+# Tasks 
 - Add maven (done)
 - Tools.jar has been migrated to a module in java 11 Module jdk.jdi (as far as i know)
-- add sqlite (or duckdb) orhttp://jsondb.io/
+- add sqlite (or duckdb) or http://jsondb.io/
 -run rest api 
 -Java allows debugging a running program and connect to it. Check jhsdb https://static.rainfocus.com/oracle/oow16/sess/14627958356770011JJj/ppt/JavaOne2016_CON3733.pdf
 -WatchpointRequest (I think this may be more efficient to monitor fields)
 -Test with lambda, multiple threads and asynchronous functions (callbacks)
+
+
 # Usage
 
-in target folder, make sure to have 
+in  the main directory. 
 
 
+                javac  -g examples/JDIExampleDebuggee.java 
+                javac  -g examples/Debuggee.java
 `
 java -cp ../target/jracer-1.0-SNAPSHOT.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/lib/tools.jar  edu.suny.jdi.JDebugger Test
 `

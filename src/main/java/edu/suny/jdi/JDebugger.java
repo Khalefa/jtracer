@@ -50,7 +50,7 @@ public class JDebugger {
     Map<String, Connector.Argument> arguments = launchingConnector.defaultArguments();
 
     arguments.get("main").setValue(debugClassName);
-    arguments.get("options").setValue("-cp .  ");
+    arguments.get("options").setValue("-cp . ");
 
     /*for (Map.Entry<String, Connector.Argument> entry : arguments.entrySet())
       System.out.println(entry.getKey() + " " + entry.getValue());
