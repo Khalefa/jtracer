@@ -7,6 +7,8 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.*;
 import javax.json.*;
+import edu.suny.*;
+
 
 public class JDI2JSON {
   private class InputPuller {
@@ -797,7 +799,7 @@ public class JDI2JSON {
   }
 
   private JsonObject diff(JsonObject old_ep, JsonObject new_ep) {
-    System.out.println("Current " + new_ep);
+    System.out.println("Current " + Util.prettyPrint(new_ep));
     System.out.println(" \n\n\n");
 
     JsonObjectBuilder result = Json.createObjectBuilder();
@@ -834,7 +836,7 @@ public class JDI2JSON {
 
     JsonObject d = result.build();
 
-    System.out.println("Difference " + d ); //Util.prettyPrint(d));
+    System.out.println("Difference " + Util.prettyPrint(d));
     return result.build(); // TODO
   }
 }
