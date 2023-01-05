@@ -1,0 +1,298 @@
+[INFO] Scanning for projects...
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/com/pentaho/maven/plugins/maven-metadata.xml
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/pentaho/maven/plugins/maven-metadata.xml
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/apache/maven/plugins/maven-metadata.xml
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/com/github/spotbugs/maven-metadata.xml
+Progress (1): 287 BProgress (2): 287 B | 249 BProgress (3): 287 B | 249 B | 261 BProgress (4): 287 B | 249 B | 261 B | 4.1 kBProgress (4): 287 B | 249 B | 261 B | 8.2 kBProgress (4): 287 B | 249 B | 261 B | 12 kB Progress (4): 287 B | 249 B | 261 B | 16 kB                                           Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/pentaho/maven/plugins/maven-metadata.xml (287 B at 278 B/s)
+Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/com/pentaho/maven/plugins/maven-metadata.xml (249 B at 240 B/s)
+Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/com/github/spotbugs/maven-metadata.xml (261 B at 251 B/s)
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/codehaus/mojo/maven-metadata.xml
+Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/apache/maven/plugins/maven-metadata.xml (16 kB at 14 kB/s)
+Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 23 kB                   Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/codehaus/mojo/maven-metadata.xml (23 kB at 47 kB/s)
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/codehaus/mojo/exec-maven-plugin/maven-metadata.xml
+Progress (1): 1.1 kB                    Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/codehaus/mojo/exec-maven-plugin/maven-metadata.xml (1.1 kB at 3.4 kB/s)
+[INFO] 
+[INFO] ------------------------< edu.suny.jdi:jtracer >------------------------
+[INFO] Building jtracer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ jtracer ---
+DebuggingTest
+===>>>VMStartEvent in thread main
+
+
+
+===>>>ClassPrepareEvent in thread main
+**		Test:1
+**		Test:4
+**		Test:5
+**		Test:8
+**		Test:10
+**		Test:11
+**		Test:12
+**		Test:13
+**		Test:14
+**		Test:15
+**		Test:16
+**		Test:17
+**		Test:18
+**		Test:19
+**		Test:20
+**		Test:6
+
+
+
+===>>>MethodEntryEvent@Test:6 in thread main
+Test.<clinit>()
+{"stdout":"","stderr":"","event":"call","line":6,"stack_to_render":[{"func_name":"<clinit>:6","encoded_locals":{},"ordered_varnames":[],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"1","frame_id":1}],"globals":{},"ordered_globals":[],"func_name":"<clinit>","heap":{}}
+
+
+
+===>>>StepEvent@Test:6 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":6,"stack_to_render":[{"func_name":"<clinit>:6","encoded_locals":{},"ordered_varnames":[],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"2","frame_id":2}],"globals":{},"ordered_globals":[],"func_name":"<clinit>","heap":{}}
+
+
+
+===>>>StepEvent@Test:6 in thread main
+
+
+
+===>>>MethodExitEvent@Test:6 in thread main
+<void value>
+{"stdout":"","stderr":"","event":"return","line":6,"stack_to_render":[{"func_name":"<clinit>:6","encoded_locals":{"__return__":["VOID"]},"ordered_varnames":["__return__"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"4","frame_id":4}],"globals":{},"ordered_globals":[],"func_name":"<clinit>","heap":{}}
+
+
+
+===>>>MethodEntryEvent@Test:8 in thread main
+Test.main(java.lang.String[])
+{"stdout":"","stderr":"","event":"call","line":8,"stack_to_render":[{"func_name":"main:8","encoded_locals":{},"ordered_varnames":[],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"5","frame_id":5}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{}}
+
+
+
+===>>>StepEvent@Test:8 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":8,"stack_to_render":[{"func_name":"main:8","encoded_locals":{},"ordered_varnames":[],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"6","frame_id":6}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{}}
+
+
+
+===>>>StepEvent@Test:8 in thread main
+
+
+
+===>>>StepEvent@Test:8 in thread main
+
+
+
+===>>>StepEvent@Test:10 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":10,"stack_to_render":[{"func_name":"main:10","encoded_locals":{"a":["REF",64]},"ordered_varnames":["a"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"9","frame_id":9}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0]}}
+
+
+
+===>>>StepEvent@Test:10 in thread main
+
+
+
+===>>>StepEvent@Test:10 in thread main
+
+
+
+===>>>MethodEntryEvent@Test:1 in thread main
+Test.<init>()
+{"stdout":"","stderr":"","event":"call","line":1,"stack_to_render":[{"func_name":"<init>:1","encoded_locals":{"this":["REF",66]},"ordered_varnames":["this"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"12","frame_id":12},{"func_name":"main:10","encoded_locals":{"a":["REF",64]},"ordered_varnames":["a"],"parent_frame_id_list":[],"is_highlighted":false,"is_zombie":false,"is_parent":false,"unique_hash":"13","frame_id":13}],"globals":{},"ordered_globals":[],"func_name":"<init>","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",0]]}}
+
+
+
+===>>>StepEvent@Test:1 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":1,"stack_to_render":[{"func_name":"<init>:1","encoded_locals":{"this":["REF",66]},"ordered_varnames":["this"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"14","frame_id":14},{"func_name":"main:10","encoded_locals":{"a":["REF",64]},"ordered_varnames":["a"],"parent_frame_id_list":[],"is_highlighted":false,"is_zombie":false,"is_parent":false,"unique_hash":"15","frame_id":15}],"globals":{},"ordered_globals":[],"func_name":"<init>","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",0]]}}
+
+
+
+===>>>StepEvent@Test:1 in thread main
+
+
+
+===>>>StepEvent@Test:1 in thread main
+
+
+
+===>>>MethodExitEvent@Test:1 in thread main
+<void value>
+{"stdout":"","stderr":"","event":"return","line":1,"stack_to_render":[{"func_name":"<init>:1","encoded_locals":{"this":["REF",66],"__return__":["VOID"]},"ordered_varnames":["this","__return__"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"20","frame_id":20},{"func_name":"main:10","encoded_locals":{"a":["REF",64]},"ordered_varnames":["a"],"parent_frame_id_list":[],"is_highlighted":false,"is_zombie":false,"is_parent":false,"unique_hash":"21","frame_id":21}],"globals":{},"ordered_globals":[],"func_name":"<init>","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",0]]}}
+
+
+
+===>>>StepEvent@Test:10 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":10,"stack_to_render":[{"func_name":"main:10","encoded_locals":{"a":["REF",64]},"ordered_varnames":["a"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"22","frame_id":22}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0]}}
+
+
+
+===>>>StepEvent@Test:11 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":11,"stack_to_render":[{"func_name":"main:11","encoded_locals":{"a":["REF",64],"t":["REF",66]},"ordered_varnames":["a","t"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"23","frame_id":23}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",0]]}}
+
+
+
+===>>>StepEvent@Test:11 in thread main
+
+
+
+===>>>StepEvent@Test:11 in thread main
+
+
+
+===>>>StepEvent@Test:12 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":12,"stack_to_render":[{"func_name":"main:12","encoded_locals":{"a":["REF",64],"t":["REF",66]},"ordered_varnames":["a","t"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"26","frame_id":26}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",3]]}}
+
+
+
+===>>>StepEvent@Test:12 in thread main
+
+
+
+===>>>StepEvent@Test:13 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":13,"stack_to_render":[{"func_name":"main:13","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"28","frame_id":28}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",3]]}}
+
+
+
+===>>>StepEvent@Test:13 in thread main
+
+
+
+===>>>StepEvent@Test:13 in thread main
+
+
+
+===>>>StepEvent@Test:14 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":14,"stack_to_render":[{"func_name":"main:14","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"31","frame_id":31}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",4]]}}
+
+
+
+===>>>StepEvent@Test:14 in thread main
+
+
+
+===>>>StepEvent@Test:14 in thread main
+
+
+
+===>>>StepEvent@Test:14 in thread main
+
+
+
+===>>>StepEvent@Test:15 in thread main
+{"stdout":"4\n","stderr":"","event":"step_line","line":15,"stack_to_render":[{"func_name":"main:15","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"35","frame_id":35}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",4]]}}
+
+
+
+===>>>StepEvent@Test:15 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":15,"stack_to_render":[{"func_name":"main:15","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"36","frame_id":36}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",4]]}}
+
+
+
+===>>>StepEvent@Test:15 in thread main
+
+
+
+===>>>StepEvent@Test:15 in thread main
+
+
+
+===>>>StepEvent@Test:16 in thread main
+{"stdout":"4\n","stderr":"","event":"step_line","line":16,"stack_to_render":[{"func_name":"main:16","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"39","frame_id":39}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",4]]}}
+
+
+
+===>>>StepEvent@Test:16 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":16,"stack_to_render":[{"func_name":"main:16","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"40","frame_id":40}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",4]]}}
+
+
+
+===>>>StepEvent@Test:17 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":17,"stack_to_render":[{"func_name":"main:17","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"41","frame_id":41}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",4]]}}
+
+
+
+===>>>StepEvent@Test:17 in thread main
+
+
+
+===>>>MethodEntryEvent@Test:4 in thread main
+Test.ttt(Test)
+{"stdout":"","stderr":"","event":"call","line":4,"stack_to_render":[{"func_name":"ttt:4","encoded_locals":{"t":["REF",66]},"ordered_varnames":["t"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"43","frame_id":43},{"func_name":"main:17","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":false,"is_zombie":false,"is_parent":false,"unique_hash":"44","frame_id":44}],"globals":{},"ordered_globals":[],"func_name":"ttt","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",4]]}}
+
+
+
+===>>>StepEvent@Test:4 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":4,"stack_to_render":[{"func_name":"ttt:4","encoded_locals":{"t":["REF",66]},"ordered_varnames":["t"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"45","frame_id":45},{"func_name":"main:17","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":false,"is_zombie":false,"is_parent":false,"unique_hash":"46","frame_id":46}],"globals":{},"ordered_globals":[],"func_name":"ttt","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",4]]}}
+
+
+
+===>>>StepEvent@Test:4 in thread main
+
+
+
+===>>>StepEvent@Test:4 in thread main
+
+
+
+===>>>StepEvent@Test:5 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":5,"stack_to_render":[{"func_name":"ttt:5","encoded_locals":{"t":["REF",66]},"ordered_varnames":["t"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"51","frame_id":51},{"func_name":"main:17","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":false,"is_zombie":false,"is_parent":false,"unique_hash":"52","frame_id":52}],"globals":{},"ordered_globals":[],"func_name":"ttt","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",44]]}}
+
+
+
+===>>>MethodExitEvent@Test:5 in thread main
+<void value>
+{"stdout":"","stderr":"","event":"return","line":5,"stack_to_render":[{"func_name":"ttt:5","encoded_locals":{"t":["REF",66],"__return__":["VOID"]},"ordered_varnames":["t","__return__"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"53","frame_id":53},{"func_name":"main:17","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":false,"is_zombie":false,"is_parent":false,"unique_hash":"54","frame_id":54}],"globals":{},"ordered_globals":[],"func_name":"ttt","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",44]]}}
+
+
+
+===>>>StepEvent@Test:18 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":18,"stack_to_render":[{"func_name":"main:18","encoded_locals":{"a":["REF",64],"t":["REF",66],"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"55","frame_id":55}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",44]]}}
+
+
+
+===>>>StepEvent@Test:18 in thread main
+
+
+
+===>>>StepEvent@Test:19 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":19,"stack_to_render":[{"func_name":"main:19","encoded_locals":{"a":["REF",64],"t":null,"t2":["REF",66]},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"57","frame_id":57}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0],"66":["INSTANCE","Test",["Test.id",44]]}}
+
+
+
+===>>>StepEvent@Test:19 in thread main
+
+
+
+===>>>StepEvent@Test:20 in thread main
+{"stdout":"","stderr":"","event":"step_line","line":20,"stack_to_render":[{"func_name":"main:20","encoded_locals":{"a":["REF",64],"t":null,"t2":null},"ordered_varnames":["a","t","t2"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"59","frame_id":59}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0]}}
+
+
+
+===>>>MethodExitEvent@Test:20 in thread main
+<void value>
+{"stdout":"","stderr":"","event":"return","line":20,"stack_to_render":[{"func_name":"main:20","encoded_locals":{"a":["REF",64],"t":null,"t2":null,"__return__":["VOID"]},"ordered_varnames":["a","t","t2","__return__"],"parent_frame_id_list":[],"is_highlighted":true,"is_zombie":false,"is_parent":false,"unique_hash":"60","frame_id":60}],"globals":{},"ordered_globals":[],"func_name":"main","heap":{"64":["LIST",0,["ELIDE",998],0]}}
+
+
+
+===>>>ThreadDeathEvent in thread main
+
+
+
+===>>>ThreadDeathEvent in thread DestroyJavaVM
+
+
+
+===>>>VMDeathEvent
+
+
+
+===>>>VMDisconnectEvent
+
+
+
+Virtual Machine is disconnected.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.535 s
+[INFO] Finished at: 2020-08-02T04:54:19-04:00
+[INFO] ------------------------------------------------------------------------

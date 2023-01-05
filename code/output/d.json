@@ -1,0 +1,465 @@
+[INFO] Scanning for projects...
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/pentaho/maven/plugins/maven-metadata.xml
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/com/github/spotbugs/maven-metadata.xml
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/apache/maven/plugins/maven-metadata.xml
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/com/pentaho/maven/plugins/maven-metadata.xml
+Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (2): 16 kB | 261 B                           Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/apache/maven/plugins/maven-metadata.xml (16 kB at 9.4 kB/s)
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/codehaus/mojo/maven-metadata.xml
+Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/com/github/spotbugs/maven-metadata.xml (261 B at 132 B/s)
+Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 23 kB                   Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/codehaus/mojo/maven-metadata.xml (23 kB at 36 kB/s)
+Progress (1): 287 B                   Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/pentaho/maven/plugins/maven-metadata.xml (287 B at 96 B/s)
+Progress (1): 249 B                   Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/com/pentaho/maven/plugins/maven-metadata.xml (249 B at 70 B/s)
+Downloading from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/codehaus/mojo/exec-maven-plugin/maven-metadata.xml
+Progress (1): 1.1 kB                    Downloaded from pentaho-public: http://nexus.pentaho.org/content/groups/omni/org/codehaus/mojo/exec-maven-plugin/maven-metadata.xml (1.1 kB at 2.6 kB/s)
+[INFO] 
+[INFO] ------------------------< edu.suny.jdi:jtracer >------------------------
+[INFO] Building jtracer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ jtracer ---
+DebuggingTest
+===>>>VMStartEvent in thread main
+
+
+
+===>>>ClassPrepareEvent in thread main
+**		Test:1
+**		Test:4
+**		Test:6
+**		Test:10
+**		Test:12
+**		Test:13
+**		Test:14
+**		Test:15
+**		Test:16
+**		Test:17
+**		Test:18
+**		Test:19
+**		Test:20
+**		Test:21
+**		Test:22
+**		Test:8
+
+
+
+===>>>MethodEntryEvent@Test:8 in thread main
+Test.<clinit>()
+{}
+
+
+
+===>>>StepEvent@Test:8 in thread main
+t1{}t2{}
+{}
+
+
+
+===>>>StepEvent@Test:8 in thread main
+t1{}t2{}
+{}
+
+
+
+===>>>MethodExitEvent@Test:8 in thread main
+<void value>
+del__return__
+t1{}t2{}
+{}
+
+
+
+===>>>MethodEntryEvent@Test:10 in thread main
+Test.main(java.lang.String[])
+add__return__
+t1{}t2{}
+{}
+
+
+
+===>>>StepEvent@Test:10 in thread main
+t1{}t2{}
+{}
+
+
+
+===>>>StepEvent@Test:10 in thread main
+t1{}t2{}
+{}
+
+
+
+===>>>StepEvent@Test:10 in thread main
+t1{}t2{}
+{}
+
+
+
+===>>>StepEvent@Test:12 in thread main
+dela
+t1{}t2{}
+{}
+
+
+
+===>>>StepEvent@Test:12 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+{}
+
+
+
+===>>>StepEvent@Test:12 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+{}
+
+
+
+===>>>MethodEntryEvent@Test:1 in thread main
+Test.<init>()
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+{}
+
+
+
+===>>>StepEvent@Test:1 in thread main
+t1{}t2{}
+t1["REF",66]t2["REF",66]
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+{}
+
+
+
+===>>>StepEvent@Test:1 in thread main
+t1{}t2{}
+t1["REF",66]t2["REF",66]
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+{}
+
+
+
+===>>>StepEvent@Test:1 in thread main
+t1{}t2{}
+t1["REF",66]t2["REF",66]
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+{}
+
+
+
+===>>>MethodExitEvent@Test:1 in thread main
+<void value>
+del__return__
+t1{}t2{}
+t1["REF",66]t2["REF",66]
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+{}
+
+
+
+===>>>StepEvent@Test:12 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+{}
+
+
+
+===>>>StepEvent@Test:13 in thread main
+delt
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+{}
+
+
+
+===>>>StepEvent@Test:13 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:13 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:14 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:14 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:15 in thread main
+delt2
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:15 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:15 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:16 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:16 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:16 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:16 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:17 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:17 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:17 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:17 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:18 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:18 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:19 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:19 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>MethodEntryEvent@Test:4 in thread main
+Test.ttt(Test)
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:4 in thread main
+t1{"t":["REF",66]}t2{"t":["REF",66]}
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:4 in thread main
+t1{"t":["REF",66]}t2{"t":["REF",66]}
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:4 in thread main
+t1{"t":["REF",66]}t2{"t":["REF",66]}
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:6 in thread main
+t1{"t":["REF",66]}t2{"t":["REF",66]}
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:6 in thread main
+t1{"t":["REF",66]}t2{"t":["REF",66]}
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>MethodExitEvent@Test:6 in thread main
+5
+del__return__
+t1{"t":["REF",66]}t2{"t":["REF",66]}
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:19 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:20 in thread main
+delo
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+{}
+
+
+
+===>>>StepEvent@Test:20 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2["REF",66]
+t1["REF",66]t2["REF",66]
+t1["int",5]t2["int",5]
+{}
+
+
+
+===>>>StepEvent@Test:21 in thread main
+t1{}t2{}
+t1["REF",64]t2["REF",64]
+t1["REF",66]t2null
+java.lang.ClassCastException: class javax.json.JsonValueImpl cannot be cast to class javax.json.JsonArray (javax.json.JsonValueImpl and javax.json.JsonArray are in unnamed module of loader java.net.URLClassLoader @621f89b8)
+	at edu.suny.jdi.JDI2JSON.diff2(JDI2JSON.java:749)
+	at edu.suny.jdi.JDI2JSON.diff(JDI2JSON.java:776)
+	at edu.suny.jdi.JDI2JSON.convertExecutionPoint(JDI2JSON.java:207)
+	at edu.suny.jdi.JDebugger.handleEvent2(JDebugger.java:158)
+	at edu.suny.jdi.JDebugger.handleEvent(JDebugger.java:148)
+	at edu.suny.jdi.JDebugger.main(JDebugger.java:246)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.735 s
+[INFO] Finished at: 2020-08-03T20:21:03-04:00
+[INFO] ------------------------------------------------------------------------

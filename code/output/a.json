@@ -1,0 +1,606 @@
+
+
+
+===>>>MethodEntryEvent@Test:8 in thread main
+Test.<clinit>()
+{"stdout":"","stderr":"","event":"call","loc":{"lineno":8,"source":"Test.java","name":"<clinit>"},"stack":[{"func_name":"<clinit>:8","encoded_locals":{"args":{}}}],"heap":{}}
+
+
+
+===>>>StepEvent@Test:8 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":8,"source":"Test.java","name":"<clinit>"},"stack":[{"func_name":"<clinit>:8","encoded_locals":{"args":{}}}],"heap":{}}
+
+
+
+===>>>StepEvent@Test:8 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":8,"source":"Test.java","name":"<clinit>"},"stack":[{"func_name":"<clinit>:8","encoded_locals":{"args":{}}}],"heap":{}}
+
+
+
+===>>>MethodExitEvent@Test:8 in thread main
+<void value>
+{"stdout":"","stderr":"","event":"return","stack":[{"func_name":"<clinit>:8","encoded_locals":{"args":{},"__return__":["void"]}}],"heap":{}}
+
+
+
+===>>>MethodEntryEvent@Test:10 in thread main
+Test.main(java.lang.String[])
+{"stdout":"","stderr":"","event":"call","loc":{"lineno":10,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:10","encoded_locals":{"args":{}}}],"heap":{}}
+
+
+
+===>>>StepEvent@Test:10 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":10,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:10","encoded_locals":{"args":{}}}],"heap":{}}
+
+
+
+===>>>StepEvent@Test:10 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":10,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:10","encoded_locals":{"args":{}}}],"heap":{}}
+
+
+
+===>>>StepEvent@Test:10 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":10,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:10","encoded_locals":{"args":{}}}],"heap":{}}
+
+
+
+===>>>StepEvent@Test:12 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":12,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:12","encoded_locals":{"args":{},"a":["REF",64]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]]}}
+
+
+
+===>>>StepEvent@Test:12 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":12,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:12","encoded_locals":{"args":{},"a":["REF",64]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]]}}
+
+
+
+===>>>StepEvent@Test:12 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":12,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:12","encoded_locals":{"args":{},"a":["REF",64]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]]}}
+
+
+
+===>>>MethodEntryEvent@Test:1 in thread main
+Test.<init>()
+{"stdout":"","stderr":"","event":"call","loc":{"lineno":1,"source":"Test.java","name":"<init>"},"stack":[{"func_name":"<init>:1","encoded_locals":{"this":["REF",66],"args":{}}},{"func_name":"main:12","encoded_locals":{"args":{},"a":["REF",64]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",0]]]}}
+
+
+
+===>>>StepEvent@Test:1 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":1,"source":"Test.java","name":"<init>"},"stack":[{"func_name":"<init>:1","encoded_locals":{"this":["REF",66],"args":{}}},{"func_name":"main:12","encoded_locals":{"args":{},"a":["REF",64]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",0]]]}}
+
+
+
+===>>>StepEvent@Test:1 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":1,"source":"Test.java","name":"<init>"},"stack":[{"func_name":"<init>:1","encoded_locals":{"this":["REF",66],"args":{}}},{"func_name":"main:12","encoded_locals":{"args":{},"a":["REF",64]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",0]]]}}
+
+
+
+===>>>StepEvent@Test:1 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":1,"source":"Test.java","name":"<init>"},"stack":[{"func_name":"<init>:1","encoded_locals":{"this":["REF",66],"args":{}}},{"func_name":"main:12","encoded_locals":{"args":{},"a":["REF",64]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",0]]]}}
+
+
+
+===>>>MethodExitEvent@Test:1 in thread main
+<void value>
+{
+  "stdout": "",
+  "stderr": "",
+  "event": "return",
+  "stack": [
+    {
+      "func_name": "<init>:1",
+      "encoded_locals": {
+        "this": ["REF", 66],
+        "args": {},
+        "__return__": ["void"]
+      }
+    },
+    {
+      "func_name": "main:12",
+      "encoded_locals": {
+        "args": {},
+        "a": ["REF", 64]
+      }
+    }
+  ],
+  "heap": {
+    "64": [
+      [
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0]
+      ]
+    ],
+    "66": [
+      "INSTANCE",
+      "Test",
+      [
+        "Test.id",
+        ["int", 0]
+      ]
+    ]
+  }
+}
+
+
+
+===>>>StepEvent@Test:12 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":12,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:12","encoded_locals":{"args":{},"a":["REF",64]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]]}}
+
+
+
+===>>>StepEvent@Test:13 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":13,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:13","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",0]]]}}
+
+
+
+===>>>StepEvent@Test:13 in thread main
+{
+  "stdout": "",
+  "stderr": "",
+  "event": "step_line",
+  "loc": {
+    "lineno": 13,
+    "source": "Test.java",
+    "name": "main"
+  },
+  "stack": [
+    {
+      "func_name": "main:13",
+      "encoded_locals": {
+        "args": {},
+        "a": ["REF", 64],
+        "t": ["REF", 66]
+      }
+    }
+  ],
+  "heap": {
+    "64": [
+      [
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0]
+      ]
+    ],
+    "66": [
+      "INSTANCE",
+      "Test",
+      [
+        "Test.id",
+        ["int", 0]
+      ]
+    ]
+  }
+}
+
+
+===>>>StepEvent@Test:13 in thread main
+{
+  "stdout": "",
+  "stderr": "",
+  "event": "step_line",
+  "loc": {
+    "lineno": 13,
+    "source": "Test.java",
+    "name": "main"
+  },
+  "stack": [
+    {
+      "func_name": "main:13",
+      "encoded_locals": {
+        "args": {},
+        "a": ["REF", 64],
+        "t": ["REF", 66]
+      }
+    }
+  ],
+  "heap": {
+    "64": [
+      [
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0]
+      ]
+    ],
+    "66": [
+      "INSTANCE",
+      "Test",
+      [
+        "Test.id",
+        ["int", 0]
+      ]
+    ]
+  }
+}
+
+
+
+===>>>StepEvent@Test:14 in thread main
+{
+  "stdout": "",
+  "stderr": "",
+  "event": "step_line",
+  "loc": {
+    "lineno": 14,
+    "source": "Test.java",
+    "name": "main"
+  },
+  "stack": [
+    {
+      "func_name": "main:14",
+      "encoded_locals": {
+        "args": {},
+        "a": ["REF", 64],
+        "t": ["REF", 66]
+      }
+    }
+  ],
+  "heap": {
+    "64": [
+      [
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0]
+      ]
+    ],
+    "66": [
+      "INSTANCE",
+      "Test",
+      [
+        "Test.id",
+        ["int", 3]
+      ]
+    ]
+  }
+}
+
+===>>>StepEvent@Test:14 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":14,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:14","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",3]]]}}
+
+
+
+===>>>StepEvent@Test:15 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":15,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:15","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",3]]]}}
+
+
+
+===>>>StepEvent@Test:15 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":15,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:15","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",3]]]}}
+
+
+
+===>>>StepEvent@Test:15 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":15,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:15","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",3]]]}}
+
+
+
+===>>>StepEvent@Test:16 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":16,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:16","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:16 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":16,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:16","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:16 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":16,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:16","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:16 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":16,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:16","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:17 in thread main
+{"stdout":"4\n","stderr":"","event":"step_line","loc":{"lineno":17,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:17","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:17 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":17,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:17","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:17 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":17,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:17","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:17 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":17,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:17","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:18 in thread main
+{"stdout":"4\n","stderr":"","event":"step_line","loc":{"lineno":18,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:18","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:18 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":18,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:18","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:19 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":19,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:19","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:19 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":19,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:19","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>MethodEntryEvent@Test:4 in thread main
+Test.ttt(Test)
+{
+  "stdout": "",
+  "stderr": "",
+  "event": "call",
+  "loc": {
+    "lineno": 4,
+    "source": "Test.java",
+    "name": "ttt"
+  },
+  "stack": [
+    {
+      "func_name": "ttt:4",
+      "encoded_locals": {
+        "args": {
+          "t": ["REF", 66]
+        }
+      }
+    },
+    {
+      "func_name": "main:19",
+      "encoded_locals": {
+        "args": {},
+        "a": ["REF", 64],
+        "t": ["REF", 66],
+        "t2": ["REF", 66]
+      }
+    }
+  ],
+  "heap": {
+    "64": [
+      [
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0]
+      ]
+    ],
+    "66": [
+      "INSTANCE",
+      "Test",
+      [
+        "Test.id",
+        ["int", 4]
+      ]
+    ]
+  }
+}
+
+===>>>StepEvent@Test:4 in thread main
+{
+  "stdout": "",
+  "stderr": "",
+  "event": "step_line",
+  "loc": {
+    "lineno": 4,
+    "source": "Test.java",
+    "name": "ttt"
+  },
+  "stack": [
+    {
+      "func_name": "ttt:4",
+      "encoded_locals": {
+        "args": {
+          "t": ["REF", 66]
+        }
+      }
+    },
+    {
+      "func_name": "main:19",
+      "encoded_locals": {
+        "args": {},
+        "a": ["REF", 64],
+        "t": ["REF", 66],
+        "t2": ["REF", 66]
+      }
+    }
+  ],
+  "heap": {
+    "64": [
+      [
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0]
+      ]
+    ],
+    "66": [
+      "INSTANCE",
+      "Test",
+      [
+        "Test.id",
+        ["int", 4]
+      ]
+    ]
+  }
+}
+
+===>>>StepEvent@Test:4 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":4,"source":"Test.java","name":"ttt"},"stack":[{"func_name":"ttt:4","encoded_locals":{"args":{"t":["REF",66]}}},{"func_name":"main:19","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:4 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":4,"source":"Test.java","name":"ttt"},"stack":[{"func_name":"ttt:4","encoded_locals":{"args":{"t":["REF",66]}}},{"func_name":"main:19","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",4]]]}}
+
+
+
+===>>>StepEvent@Test:6 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":6,"source":"Test.java","name":"ttt"},"stack":[{"func_name":"ttt:6","encoded_locals":{"args":{"t":["REF",66]}}},{"func_name":"main:19","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",44]]]}}
+
+
+
+===>>>StepEvent@Test:6 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":6,"source":"Test.java","name":"ttt"},"stack":[{"func_name":"ttt:6","encoded_locals":{"args":{"t":["REF",66]}}},{"func_name":"main:19","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",44]]]}}
+
+
+
+===>>>MethodExitEvent@Test:6 in thread main
+5
+{
+  "stdout": "",
+  "stderr": "",
+  "event": "return",
+  "stack": [
+    {
+      "func_name": "ttt:6",
+      "encoded_locals": {
+        "args": {
+          "t": ["REF", 66]
+        },
+        "__return__": ["int", 5]
+      }
+    },
+    {
+      "func_name": "main:19",
+      "encoded_locals": {
+        "args": {},
+        "a": ["REF", 64],
+        "t": ["REF", 66],
+        "t2": ["REF", 66]
+      }
+    }
+  ],
+  "heap": {
+    "64": [
+      [
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0],
+        ["int", 0]
+      ]
+    ],
+    "66": [
+      "INSTANCE",
+      "Test",
+      [
+        "Test.id",
+        ["int", 44]
+      ]
+    ]
+  }
+}
+
+===>>>StepEvent@Test:19 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":19,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:19","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",44]]]}}
+
+
+
+===>>>StepEvent@Test:20 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":20,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:20","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66],"o":["int",5]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",44]]]}}
+
+
+
+===>>>StepEvent@Test:20 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":20,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:20","encoded_locals":{"args":{},"a":["REF",64],"t":["REF",66],"t2":["REF",66],"o":["int",5]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",44]]]}}
+
+
+
+===>>>StepEvent@Test:21 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":21,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:21","encoded_locals":{"args":{},"a":["REF",64],"t":null,"t2":["REF",66],"o":["int",5]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",44]]]}}
+
+
+
+===>>>StepEvent@Test:21 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":21,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:21","encoded_locals":{"args":{},"a":["REF",64],"t":null,"t2":["REF",66],"o":["int",5]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]],"66":["INSTANCE","Test",["Test.id",["int",44]]]}}
+
+
+
+===>>>StepEvent@Test:22 in thread main
+{"stdout":"","stderr":"","event":"step_line","loc":{"lineno":22,"source":"Test.java","name":"main"},"stack":[{"func_name":"main:22","encoded_locals":{"args":{},"a":["REF",64],"t":null,"t2":null,"o":["int",5]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]]}}
+
+
+
+===>>>MethodExitEvent@Test:22 in thread main
+<void value>
+{"stdout":"","stderr":"","event":"return","stack":[{"func_name":"main:22","encoded_locals":{"args":{},"a":["REF",64],"t":null,"t2":null,"o":["int",5],"__return__":["void"]}}],"heap":{"64":[[["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0],["int",0]]]}}
+
+
+
+===>>>ThreadDeathEvent in thread main
+
+
+
+===>>>ThreadDeathEvent in thread DestroyJavaVM
+
+
+
+===>>>VMDeathEvent
+
+
+
+===>>>VMDisconnectEvent
+
+
+
+Virtual Machine is disconnected.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.093 s
+[INFO] Finished at: 2020-08-03T03:26:01-04:00
+[INFO] ------------------------------------------------------------------------
