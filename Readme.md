@@ -4,6 +4,6 @@
 		docker build -t mvn .
 
 -run the following 
-
+	docker 
 
 Note: mvn 

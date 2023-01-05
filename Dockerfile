@@ -19,11 +19,13 @@ RUN apt-get update && \
 	rm -rf /var/lib/apt/lists/* && \
 	rm -rf /var/cache/oracle-jdk8-installer;
 
+USER user
 # Setup JAVA_HOME, this is useful for docker commandline
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
 RUN mkdir /code
 #docker build -t mvn .
-#docker run   -it --mount type=bind,source=/home/ubuntu/t4/jtracer,target=/code mvn /bin/bash
+# docker run   -it --mount type=bind,source=$PWD/code,target=/code mvn /bin/bash
+
 
