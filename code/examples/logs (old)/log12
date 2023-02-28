@@ -1,0 +1,1202 @@
+Test4.java - line 7 - int total = 100
+Test4.java - line 8 - long seed = 1234567896189
+Test4.java - line 16 - int i = 0
+Test4.java - line 18 - int num = 1
+Test4.java - line 20 - int[] totalArray[0] = 1
+Test4.java - line 16 - int i = 1
+Test4.java - line 18 - int num = 2
+Test4.java - line 20 - int[] totalArray[1] = 2
+Test4.java - line 16 - int i = 2
+Test4.java - line 18 - int num = 3
+Test4.java - line 20 - int[] totalArray[2] = 3
+Test4.java - line 16 - int i = 3
+Test4.java - line 18 - int num = 4
+Test4.java - line 20 - int[] totalArray[3] = 4
+Test4.java - line 16 - int i = 4
+Test4.java - line 18 - int num = 5
+Test4.java - line 20 - int[] totalArray[4] = 5
+Test4.java - line 16 - int i = 5
+Test4.java - line 18 - int num = 6
+Test4.java - line 20 - int[] totalArray[5] = 6
+Test4.java - line 16 - int i = 6
+Test4.java - line 18 - int num = 7
+Test4.java - line 20 - int[] totalArray[6] = 7
+Test4.java - line 16 - int i = 7
+Test4.java - line 18 - int num = 8
+Test4.java - line 20 - int[] totalArray[7] = 8
+Test4.java - line 16 - int i = 8
+Test4.java - line 18 - int num = 9
+Test4.java - line 20 - int[] totalArray[8] = 9
+Test4.java - line 16 - int i = 9
+Test4.java - line 18 - int num = 10
+Test4.java - line 20 - int[] totalArray[9] = 10
+Test4.java - line 16 - int i = 10
+Test4.java - line 18 - int num = 11
+Test4.java - line 20 - int[] totalArray[10] = 11
+Test4.java - line 16 - int i = 11
+Test4.java - line 18 - int num = 12
+Test4.java - line 20 - int[] totalArray[11] = 12
+Test4.java - line 16 - int i = 12
+Test4.java - line 18 - int num = 13
+Test4.java - line 20 - int[] totalArray[12] = 13
+Test4.java - line 16 - int i = 13
+Test4.java - line 18 - int num = 14
+Test4.java - line 20 - int[] totalArray[13] = 14
+Test4.java - line 16 - int i = 14
+Test4.java - line 18 - int num = 15
+Test4.java - line 20 - int[] totalArray[14] = 15
+Test4.java - line 16 - int i = 15
+Test4.java - line 18 - int num = 16
+Test4.java - line 20 - int[] totalArray[15] = 16
+Test4.java - line 16 - int i = 16
+Test4.java - line 18 - int num = 17
+Test4.java - line 20 - int[] totalArray[16] = 17
+Test4.java - line 16 - int i = 17
+Test4.java - line 18 - int num = 18
+Test4.java - line 20 - int[] totalArray[17] = 18
+Test4.java - line 16 - int i = 18
+Test4.java - line 18 - int num = 19
+Test4.java - line 20 - int[] totalArray[18] = 19
+Test4.java - line 16 - int i = 19
+Test4.java - line 18 - int num = 20
+Test4.java - line 20 - int[] totalArray[19] = 20
+Test4.java - line 16 - int i = 20
+Test4.java - line 18 - int num = 21
+Test4.java - line 20 - int[] totalArray[20] = 21
+Test4.java - line 16 - int i = 21
+Test4.java - line 18 - int num = 22
+Test4.java - line 20 - int[] totalArray[21] = 22
+Test4.java - line 16 - int i = 22
+Test4.java - line 18 - int num = 23
+Test4.java - line 20 - int[] totalArray[22] = 23
+Test4.java - line 16 - int i = 23
+Test4.java - line 18 - int num = 24
+Test4.java - line 20 - int[] totalArray[23] = 24
+Test4.java - line 16 - int i = 24
+Test4.java - line 18 - int num = 25
+Test4.java - line 20 - int[] totalArray[24] = 25
+Test4.java - line 16 - int i = 25
+Test4.java - line 18 - int num = 26
+Test4.java - line 20 - int[] totalArray[25] = 26
+Test4.java - line 16 - int i = 26
+Test4.java - line 18 - int num = 27
+Test4.java - line 20 - int[] totalArray[26] = 27
+Test4.java - line 16 - int i = 27
+Test4.java - line 18 - int num = 28
+Test4.java - line 20 - int[] totalArray[27] = 28
+Test4.java - line 16 - int i = 28
+Test4.java - line 18 - int num = 29
+Test4.java - line 20 - int[] totalArray[28] = 29
+Test4.java - line 16 - int i = 29
+Test4.java - line 18 - int num = 30
+Test4.java - line 20 - int[] totalArray[29] = 30
+Test4.java - line 16 - int i = 30
+Test4.java - line 18 - int num = 31
+Test4.java - line 20 - int[] totalArray[30] = 31
+Test4.java - line 16 - int i = 31
+Test4.java - line 18 - int num = 32
+Test4.java - line 20 - int[] totalArray[31] = 32
+Test4.java - line 16 - int i = 32
+Test4.java - line 18 - int num = 33
+Test4.java - line 20 - int[] totalArray[32] = 33
+Test4.java - line 16 - int i = 33
+Test4.java - line 18 - int num = 34
+Test4.java - line 20 - int[] totalArray[33] = 34
+Test4.java - line 16 - int i = 34
+Test4.java - line 18 - int num = 35
+Test4.java - line 20 - int[] totalArray[34] = 35
+Test4.java - line 16 - int i = 35
+Test4.java - line 18 - int num = 36
+Test4.java - line 20 - int[] totalArray[35] = 36
+Test4.java - line 16 - int i = 36
+Test4.java - line 18 - int num = 37
+Test4.java - line 20 - int[] totalArray[36] = 37
+Test4.java - line 16 - int i = 37
+Test4.java - line 18 - int num = 38
+Test4.java - line 20 - int[] totalArray[37] = 38
+Test4.java - line 16 - int i = 38
+Test4.java - line 18 - int num = 39
+Test4.java - line 20 - int[] totalArray[38] = 39
+Test4.java - line 16 - int i = 39
+Test4.java - line 18 - int num = 40
+Test4.java - line 20 - int[] totalArray[39] = 40
+Test4.java - line 16 - int i = 40
+Test4.java - line 18 - int num = 41
+Test4.java - line 20 - int[] totalArray[40] = 41
+Test4.java - line 16 - int i = 41
+Test4.java - line 18 - int num = 42
+Test4.java - line 20 - int[] totalArray[41] = 42
+Test4.java - line 16 - int i = 42
+Test4.java - line 18 - int num = 43
+Test4.java - line 20 - int[] totalArray[42] = 43
+Test4.java - line 16 - int i = 43
+Test4.java - line 18 - int num = 44
+Test4.java - line 20 - int[] totalArray[43] = 44
+Test4.java - line 16 - int i = 44
+Test4.java - line 18 - int num = 45
+Test4.java - line 20 - int[] totalArray[44] = 45
+Test4.java - line 16 - int i = 45
+Test4.java - line 18 - int num = 46
+Test4.java - line 20 - int[] totalArray[45] = 46
+Test4.java - line 16 - int i = 46
+Test4.java - line 18 - int num = 47
+Test4.java - line 20 - int[] totalArray[46] = 47
+Test4.java - line 16 - int i = 47
+Test4.java - line 18 - int num = 48
+Test4.java - line 20 - int[] totalArray[47] = 48
+Test4.java - line 16 - int i = 48
+Test4.java - line 18 - int num = 49
+Test4.java - line 20 - int[] totalArray[48] = 49
+Test4.java - line 16 - int i = 49
+Test4.java - line 18 - int num = 50
+Test4.java - line 20 - int[] totalArray[49] = 50
+Test4.java - line 16 - int i = 50
+Test4.java - line 18 - int num = 51
+Test4.java - line 20 - int[] totalArray[50] = 51
+Test4.java - line 16 - int i = 51
+Test4.java - line 18 - int num = 52
+Test4.java - line 20 - int[] totalArray[51] = 52
+Test4.java - line 16 - int i = 52
+Test4.java - line 18 - int num = 53
+Test4.java - line 20 - int[] totalArray[52] = 53
+Test4.java - line 16 - int i = 53
+Test4.java - line 18 - int num = 54
+Test4.java - line 20 - int[] totalArray[53] = 54
+Test4.java - line 16 - int i = 54
+Test4.java - line 18 - int num = 55
+Test4.java - line 20 - int[] totalArray[54] = 55
+Test4.java - line 16 - int i = 55
+Test4.java - line 18 - int num = 56
+Test4.java - line 20 - int[] totalArray[55] = 56
+Test4.java - line 16 - int i = 56
+Test4.java - line 18 - int num = 57
+Test4.java - line 20 - int[] totalArray[56] = 57
+Test4.java - line 16 - int i = 57
+Test4.java - line 18 - int num = 58
+Test4.java - line 20 - int[] totalArray[57] = 58
+Test4.java - line 16 - int i = 58
+Test4.java - line 18 - int num = 59
+Test4.java - line 20 - int[] totalArray[58] = 59
+Test4.java - line 16 - int i = 59
+Test4.java - line 18 - int num = 60
+Test4.java - line 20 - int[] totalArray[59] = 60
+Test4.java - line 16 - int i = 60
+Test4.java - line 18 - int num = 61
+Test4.java - line 20 - int[] totalArray[60] = 61
+Test4.java - line 16 - int i = 61
+Test4.java - line 18 - int num = 62
+Test4.java - line 20 - int[] totalArray[61] = 62
+Test4.java - line 16 - int i = 62
+Test4.java - line 18 - int num = 63
+Test4.java - line 20 - int[] totalArray[62] = 63
+Test4.java - line 16 - int i = 63
+Test4.java - line 18 - int num = 64
+Test4.java - line 20 - int[] totalArray[63] = 64
+Test4.java - line 16 - int i = 64
+Test4.java - line 18 - int num = 65
+Test4.java - line 20 - int[] totalArray[64] = 65
+Test4.java - line 16 - int i = 65
+Test4.java - line 18 - int num = 66
+Test4.java - line 20 - int[] totalArray[65] = 66
+Test4.java - line 16 - int i = 66
+Test4.java - line 18 - int num = 67
+Test4.java - line 20 - int[] totalArray[66] = 67
+Test4.java - line 16 - int i = 67
+Test4.java - line 18 - int num = 68
+Test4.java - line 20 - int[] totalArray[67] = 68
+Test4.java - line 16 - int i = 68
+Test4.java - line 18 - int num = 69
+Test4.java - line 20 - int[] totalArray[68] = 69
+Test4.java - line 16 - int i = 69
+Test4.java - line 18 - int num = 70
+Test4.java - line 20 - int[] totalArray[69] = 70
+Test4.java - line 16 - int i = 70
+Test4.java - line 18 - int num = 71
+Test4.java - line 20 - int[] totalArray[70] = 71
+Test4.java - line 16 - int i = 71
+Test4.java - line 18 - int num = 72
+Test4.java - line 20 - int[] totalArray[71] = 72
+Test4.java - line 16 - int i = 72
+Test4.java - line 18 - int num = 73
+Test4.java - line 20 - int[] totalArray[72] = 73
+Test4.java - line 16 - int i = 73
+Test4.java - line 18 - int num = 74
+Test4.java - line 20 - int[] totalArray[73] = 74
+Test4.java - line 16 - int i = 74
+Test4.java - line 18 - int num = 75
+Test4.java - line 20 - int[] totalArray[74] = 75
+Test4.java - line 16 - int i = 75
+Test4.java - line 18 - int num = 76
+Test4.java - line 20 - int[] totalArray[75] = 76
+Test4.java - line 16 - int i = 76
+Test4.java - line 18 - int num = 77
+Test4.java - line 20 - int[] totalArray[76] = 77
+Test4.java - line 16 - int i = 77
+Test4.java - line 18 - int num = 78
+Test4.java - line 20 - int[] totalArray[77] = 78
+Test4.java - line 16 - int i = 78
+Test4.java - line 18 - int num = 79
+Test4.java - line 20 - int[] totalArray[78] = 79
+Test4.java - line 16 - int i = 79
+Test4.java - line 18 - int num = 80
+Test4.java - line 20 - int[] totalArray[79] = 80
+Test4.java - line 16 - int i = 80
+Test4.java - line 18 - int num = 81
+Test4.java - line 20 - int[] totalArray[80] = 81
+Test4.java - line 16 - int i = 81
+Test4.java - line 18 - int num = 82
+Test4.java - line 20 - int[] totalArray[81] = 82
+Test4.java - line 16 - int i = 82
+Test4.java - line 18 - int num = 83
+Test4.java - line 20 - int[] totalArray[82] = 83
+Test4.java - line 16 - int i = 83
+Test4.java - line 18 - int num = 84
+Test4.java - line 20 - int[] totalArray[83] = 84
+Test4.java - line 16 - int i = 84
+Test4.java - line 18 - int num = 85
+Test4.java - line 20 - int[] totalArray[84] = 85
+Test4.java - line 16 - int i = 85
+Test4.java - line 18 - int num = 86
+Test4.java - line 20 - int[] totalArray[85] = 86
+Test4.java - line 16 - int i = 86
+Test4.java - line 18 - int num = 87
+Test4.java - line 20 - int[] totalArray[86] = 87
+Test4.java - line 16 - int i = 87
+Test4.java - line 18 - int num = 88
+Test4.java - line 20 - int[] totalArray[87] = 88
+Test4.java - line 16 - int i = 88
+Test4.java - line 18 - int num = 89
+Test4.java - line 20 - int[] totalArray[88] = 89
+Test4.java - line 16 - int i = 89
+Test4.java - line 18 - int num = 90
+Test4.java - line 20 - int[] totalArray[89] = 90
+Test4.java - line 16 - int i = 90
+Test4.java - line 18 - int num = 91
+Test4.java - line 20 - int[] totalArray[90] = 91
+Test4.java - line 16 - int i = 91
+Test4.java - line 18 - int num = 92
+Test4.java - line 20 - int[] totalArray[91] = 92
+Test4.java - line 16 - int i = 92
+Test4.java - line 18 - int num = 93
+Test4.java - line 20 - int[] totalArray[92] = 93
+Test4.java - line 16 - int i = 93
+Test4.java - line 18 - int num = 94
+Test4.java - line 20 - int[] totalArray[93] = 94
+Test4.java - line 16 - int i = 94
+Test4.java - line 18 - int num = 95
+Test4.java - line 20 - int[] totalArray[94] = 95
+Test4.java - line 16 - int i = 95
+Test4.java - line 18 - int num = 96
+Test4.java - line 20 - int[] totalArray[95] = 96
+Test4.java - line 16 - int i = 96
+Test4.java - line 18 - int num = 97
+Test4.java - line 20 - int[] totalArray[96] = 97
+Test4.java - line 16 - int i = 97
+Test4.java - line 18 - int num = 98
+Test4.java - line 20 - int[] totalArray[97] = 98
+Test4.java - line 16 - int i = 98
+Test4.java - line 18 - int num = 99
+Test4.java - line 20 - int[] totalArray[98] = 99
+Test4.java - line 16 - int i = 99
+Test4.java - line 18 - int num = 100
+Test4.java - line 20 - int[] totalArray[99] = 100
+Test4.java - line 26 - int i = 0
+Test4.java - line 28 - int rndIndex = 15
+Test4.java - line 30 - int temp = int[] totalArray[15] = 16
+Test4.java - line 32 - int[] totalArray[15] = totalArray[0] = 1
+Test4.java - line 34 - int[] totalArray[0] = temp = 16
+Test4.java - line 26 - int i = 1
+Test4.java - line 28 - int rndIndex = 4
+Test4.java - line 30 - int temp = int[] totalArray[4] = 5
+Test4.java - line 32 - int[] totalArray[4] = totalArray[1] = 2
+Test4.java - line 34 - int[] totalArray[1] = temp = 5
+Test4.java - line 26 - int i = 2
+Test4.java - line 28 - int rndIndex = 63
+Test4.java - line 30 - int temp = int[] totalArray[63] = 64
+Test4.java - line 32 - int[] totalArray[63] = totalArray[2] = 3
+Test4.java - line 34 - int[] totalArray[2] = temp = 64
+Test4.java - line 26 - int i = 3
+Test4.java - line 28 - int rndIndex = 24
+Test4.java - line 30 - int temp = int[] totalArray[24] = 25
+Test4.java - line 32 - int[] totalArray[24] = totalArray[3] = 4
+Test4.java - line 34 - int[] totalArray[3] = temp = 25
+Test4.java - line 26 - int i = 4
+Test4.java - line 28 - int rndIndex = 87
+Test4.java - line 30 - int temp = int[] totalArray[87] = 88
+Test4.java - line 32 - int[] totalArray[87] = totalArray[4] = 2
+Test4.java - line 34 - int[] totalArray[4] = temp = 88
+Test4.java - line 26 - int i = 5
+Test4.java - line 28 - int rndIndex = 61
+Test4.java - line 30 - int temp = int[] totalArray[61] = 62
+Test4.java - line 32 - int[] totalArray[61] = totalArray[5] = 6
+Test4.java - line 34 - int[] totalArray[5] = temp = 62
+Test4.java - line 26 - int i = 6
+Test4.java - line 28 - int rndIndex = 5
+Test4.java - line 30 - int temp = int[] totalArray[5] = 62
+Test4.java - line 32 - int[] totalArray[5] = totalArray[6] = 7
+Test4.java - line 34 - int[] totalArray[6] = temp = 62
+Test4.java - line 26 - int i = 7
+Test4.java - line 28 - int rndIndex = 57
+Test4.java - line 30 - int temp = int[] totalArray[57] = 58
+Test4.java - line 32 - int[] totalArray[57] = totalArray[7] = 8
+Test4.java - line 34 - int[] totalArray[7] = temp = 58
+Test4.java - line 26 - int i = 8
+Test4.java - line 28 - int rndIndex = 58
+Test4.java - line 30 - int temp = int[] totalArray[58] = 59
+Test4.java - line 32 - int[] totalArray[58] = totalArray[8] = 9
+Test4.java - line 34 - int[] totalArray[8] = temp = 59
+Test4.java - line 26 - int i = 9
+Test4.java - line 28 - int rndIndex = 99
+Test4.java - line 30 - int temp = int[] totalArray[99] = 100
+Test4.java - line 32 - int[] totalArray[99] = totalArray[9] = 10
+Test4.java - line 34 - int[] totalArray[9] = temp = 100
+Test4.java - line 26 - int i = 10
+Test4.java - line 28 - int rndIndex = 76
+Test4.java - line 30 - int temp = int[] totalArray[76] = 77
+Test4.java - line 32 - int[] totalArray[76] = totalArray[10] = 11
+Test4.java - line 34 - int[] totalArray[10] = temp = 77
+Test4.java - line 26 - int i = 11
+Test4.java - line 28 - int rndIndex = 47
+Test4.java - line 30 - int temp = int[] totalArray[47] = 48
+Test4.java - line 32 - int[] totalArray[47] = totalArray[11] = 12
+Test4.java - line 34 - int[] totalArray[11] = temp = 48
+Test4.java - line 26 - int i = 12
+Test4.java - line 28 - int rndIndex = 62
+Test4.java - line 30 - int temp = int[] totalArray[62] = 63
+Test4.java - line 32 - int[] totalArray[62] = totalArray[12] = 13
+Test4.java - line 34 - int[] totalArray[12] = temp = 63
+Test4.java - line 26 - int i = 13
+Test4.java - line 28 - int rndIndex = 41
+Test4.java - line 30 - int temp = int[] totalArray[41] = 42
+Test4.java - line 32 - int[] totalArray[41] = totalArray[13] = 14
+Test4.java - line 34 - int[] totalArray[13] = temp = 42
+Test4.java - line 26 - int i = 14
+Test4.java - line 28 - int rndIndex = 27
+Test4.java - line 30 - int temp = int[] totalArray[27] = 28
+Test4.java - line 32 - int[] totalArray[27] = totalArray[14] = 15
+Test4.java - line 34 - int[] totalArray[14] = temp = 28
+Test4.java - line 26 - int i = 15
+Test4.java - line 28 - int rndIndex = 45
+Test4.java - line 30 - int temp = int[] totalArray[45] = 46
+Test4.java - line 32 - int[] totalArray[45] = totalArray[15] = 1
+Test4.java - line 34 - int[] totalArray[15] = temp = 46
+Test4.java - line 26 - int i = 16
+Test4.java - line 28 - int rndIndex = 78
+Test4.java - line 30 - int temp = int[] totalArray[78] = 79
+Test4.java - line 32 - int[] totalArray[78] = totalArray[16] = 17
+Test4.java - line 34 - int[] totalArray[16] = temp = 79
+Test4.java - line 26 - int i = 17
+Test4.java - line 28 - int rndIndex = 30
+Test4.java - line 30 - int temp = int[] totalArray[30] = 31
+Test4.java - line 32 - int[] totalArray[30] = totalArray[17] = 18
+Test4.java - line 34 - int[] totalArray[17] = temp = 31
+Test4.java - line 26 - int i = 18
+Test4.java - line 28 - int rndIndex = 53
+Test4.java - line 30 - int temp = int[] totalArray[53] = 54
+Test4.java - line 32 - int[] totalArray[53] = totalArray[18] = 19
+Test4.java - line 34 - int[] totalArray[18] = temp = 54
+Test4.java - line 26 - int i = 19
+Test4.java - line 28 - int rndIndex = 99
+Test4.java - line 30 - int temp = int[] totalArray[99] = 10
+Test4.java - line 32 - int[] totalArray[99] = totalArray[19] = 20
+Test4.java - line 34 - int[] totalArray[19] = temp = 10
+Test4.java - line 26 - int i = 20
+Test4.java - line 28 - int rndIndex = 18
+Test4.java - line 30 - int temp = int[] totalArray[18] = 54
+Test4.java - line 32 - int[] totalArray[18] = totalArray[20] = 21
+Test4.java - line 34 - int[] totalArray[20] = temp = 54
+Test4.java - line 26 - int i = 21
+Test4.java - line 28 - int rndIndex = 26
+Test4.java - line 30 - int temp = int[] totalArray[26] = 27
+Test4.java - line 32 - int[] totalArray[26] = totalArray[21] = 22
+Test4.java - line 34 - int[] totalArray[21] = temp = 27
+Test4.java - line 26 - int i = 22
+Test4.java - line 28 - int rndIndex = 33
+Test4.java - line 30 - int temp = int[] totalArray[33] = 34
+Test4.java - line 32 - int[] totalArray[33] = totalArray[22] = 23
+Test4.java - line 34 - int[] totalArray[22] = temp = 34
+Test4.java - line 26 - int i = 23
+Test4.java - line 28 - int rndIndex = 38
+Test4.java - line 30 - int temp = int[] totalArray[38] = 39
+Test4.java - line 32 - int[] totalArray[38] = totalArray[23] = 24
+Test4.java - line 34 - int[] totalArray[23] = temp = 39
+Test4.java - line 26 - int i = 24
+Test4.java - line 28 - int rndIndex = 24
+Test4.java - line 30 - int temp = int[] totalArray[24] = 4
+Test4.java - line 32 - int[] totalArray[24] = totalArray[24] = 4
+Test4.java - line 34 - int[] totalArray[24] = temp = 4
+Test4.java - line 26 - int i = 25
+Test4.java - line 28 - int rndIndex = 80
+Test4.java - line 30 - int temp = int[] totalArray[80] = 81
+Test4.java - line 32 - int[] totalArray[80] = totalArray[25] = 26
+Test4.java - line 34 - int[] totalArray[25] = temp = 81
+Test4.java - line 26 - int i = 26
+Test4.java - line 28 - int rndIndex = 18
+Test4.java - line 30 - int temp = int[] totalArray[18] = 21
+Test4.java - line 32 - int[] totalArray[18] = totalArray[26] = 22
+Test4.java - line 34 - int[] totalArray[26] = temp = 21
+Test4.java - line 26 - int i = 27
+Test4.java - line 28 - int rndIndex = 22
+Test4.java - line 30 - int temp = int[] totalArray[22] = 34
+Test4.java - line 32 - int[] totalArray[22] = totalArray[27] = 15
+Test4.java - line 34 - int[] totalArray[27] = temp = 34
+Test4.java - line 26 - int i = 28
+Test4.java - line 28 - int rndIndex = 87
+Test4.java - line 30 - int temp = int[] totalArray[87] = 2
+Test4.java - line 32 - int[] totalArray[87] = totalArray[28] = 29
+Test4.java - line 34 - int[] totalArray[28] = temp = 2
+Test4.java - line 26 - int i = 29
+Test4.java - line 28 - int rndIndex = 39
+Test4.java - line 30 - int temp = int[] totalArray[39] = 40
+Test4.java - line 32 - int[] totalArray[39] = totalArray[29] = 30
+Test4.java - line 34 - int[] totalArray[29] = temp = 40
+Test4.java - line 26 - int i = 30
+Test4.java - line 28 - int rndIndex = 43
+Test4.java - line 30 - int temp = int[] totalArray[43] = 44
+Test4.java - line 32 - int[] totalArray[43] = totalArray[30] = 18
+Test4.java - line 34 - int[] totalArray[30] = temp = 44
+Test4.java - line 26 - int i = 31
+Test4.java - line 28 - int rndIndex = 87
+Test4.java - line 30 - int temp = int[] totalArray[87] = 29
+Test4.java - line 32 - int[] totalArray[87] = totalArray[31] = 32
+Test4.java - line 34 - int[] totalArray[31] = temp = 29
+Test4.java - line 26 - int i = 32
+Test4.java - line 28 - int rndIndex = 18
+Test4.java - line 30 - int temp = int[] totalArray[18] = 22
+Test4.java - line 32 - int[] totalArray[18] = totalArray[32] = 33
+Test4.java - line 34 - int[] totalArray[32] = temp = 22
+Test4.java - line 26 - int i = 33
+Test4.java - line 28 - int rndIndex = 68
+Test4.java - line 30 - int temp = int[] totalArray[68] = 69
+Test4.java - line 32 - int[] totalArray[68] = totalArray[33] = 23
+Test4.java - line 34 - int[] totalArray[33] = temp = 69
+Test4.java - line 26 - int i = 34
+Test4.java - line 28 - int rndIndex = 15
+Test4.java - line 30 - int temp = int[] totalArray[15] = 46
+Test4.java - line 32 - int[] totalArray[15] = totalArray[34] = 35
+Test4.java - line 34 - int[] totalArray[34] = temp = 46
+Test4.java - line 26 - int i = 35
+Test4.java - line 28 - int rndIndex = 37
+Test4.java - line 30 - int temp = int[] totalArray[37] = 38
+Test4.java - line 32 - int[] totalArray[37] = totalArray[35] = 36
+Test4.java - line 34 - int[] totalArray[35] = temp = 38
+Test4.java - line 26 - int i = 36
+Test4.java - line 28 - int rndIndex = 1
+Test4.java - line 30 - int temp = int[] totalArray[1] = 5
+Test4.java - line 32 - int[] totalArray[1] = totalArray[36] = 37
+Test4.java - line 34 - int[] totalArray[36] = temp = 5
+Test4.java - line 26 - int i = 37
+Test4.java - line 28 - int rndIndex = 17
+Test4.java - line 30 - int temp = int[] totalArray[17] = 31
+Test4.java - line 32 - int[] totalArray[17] = totalArray[37] = 36
+Test4.java - line 34 - int[] totalArray[37] = temp = 31
+Test4.java - line 26 - int i = 38
+Test4.java - line 28 - int rndIndex = 78
+Test4.java - line 30 - int temp = int[] totalArray[78] = 17
+Test4.java - line 32 - int[] totalArray[78] = totalArray[38] = 24
+Test4.java - line 34 - int[] totalArray[38] = temp = 17
+Test4.java - line 26 - int i = 39
+Test4.java - line 28 - int rndIndex = 5
+Test4.java - line 30 - int temp = int[] totalArray[5] = 7
+Test4.java - line 32 - int[] totalArray[5] = totalArray[39] = 30
+Test4.java - line 34 - int[] totalArray[39] = temp = 7
+Test4.java - line 26 - int i = 40
+Test4.java - line 28 - int rndIndex = 97
+Test4.java - line 30 - int temp = int[] totalArray[97] = 98
+Test4.java - line 32 - int[] totalArray[97] = totalArray[40] = 41
+Test4.java - line 34 - int[] totalArray[40] = temp = 98
+Test4.java - line 26 - int i = 41
+Test4.java - line 28 - int rndIndex = 12
+Test4.java - line 30 - int temp = int[] totalArray[12] = 63
+Test4.java - line 32 - int[] totalArray[12] = totalArray[41] = 14
+Test4.java - line 34 - int[] totalArray[41] = temp = 63
+Test4.java - line 26 - int i = 42
+Test4.java - line 28 - int rndIndex = 88
+Test4.java - line 30 - int temp = int[] totalArray[88] = 89
+Test4.java - line 32 - int[] totalArray[88] = totalArray[42] = 43
+Test4.java - line 34 - int[] totalArray[42] = temp = 89
+Test4.java - line 26 - int i = 43
+Test4.java - line 28 - int rndIndex = 57
+Test4.java - line 30 - int temp = int[] totalArray[57] = 8
+Test4.java - line 32 - int[] totalArray[57] = totalArray[43] = 18
+Test4.java - line 34 - int[] totalArray[43] = temp = 8
+Test4.java - line 26 - int i = 44
+Test4.java - line 28 - int rndIndex = 98
+Test4.java - line 30 - int temp = int[] totalArray[98] = 99
+Test4.java - line 32 - int[] totalArray[98] = totalArray[44] = 45
+Test4.java - line 34 - int[] totalArray[44] = temp = 99
+Test4.java - line 26 - int i = 45
+Test4.java - line 28 - int rndIndex = 96
+Test4.java - line 30 - int temp = int[] totalArray[96] = 97
+Test4.java - line 32 - int[] totalArray[96] = totalArray[45] = 1
+Test4.java - line 34 - int[] totalArray[45] = temp = 97
+Test4.java - line 26 - int i = 46
+Test4.java - line 28 - int rndIndex = 58
+Test4.java - line 30 - int temp = int[] totalArray[58] = 9
+Test4.java - line 32 - int[] totalArray[58] = totalArray[46] = 47
+Test4.java - line 34 - int[] totalArray[46] = temp = 9
+Test4.java - line 26 - int i = 47
+Test4.java - line 28 - int rndIndex = 45
+Test4.java - line 30 - int temp = int[] totalArray[45] = 97
+Test4.java - line 32 - int[] totalArray[45] = totalArray[47] = 12
+Test4.java - line 34 - int[] totalArray[47] = temp = 97
+Test4.java - line 26 - int i = 48
+Test4.java - line 28 - int rndIndex = 51
+Test4.java - line 30 - int temp = int[] totalArray[51] = 52
+Test4.java - line 32 - int[] totalArray[51] = totalArray[48] = 49
+Test4.java - line 34 - int[] totalArray[48] = temp = 52
+Test4.java - line 26 - int i = 49
+Test4.java - line 28 - int rndIndex = 68
+Test4.java - line 30 - int temp = int[] totalArray[68] = 23
+Test4.java - line 32 - int[] totalArray[68] = totalArray[49] = 50
+Test4.java - line 34 - int[] totalArray[49] = temp = 23
+Test4.java - line 26 - int i = 50
+Test4.java - line 28 - int rndIndex = 40
+Test4.java - line 30 - int temp = int[] totalArray[40] = 98
+Test4.java - line 32 - int[] totalArray[40] = totalArray[50] = 51
+Test4.java - line 34 - int[] totalArray[50] = temp = 98
+Test4.java - line 26 - int i = 51
+Test4.java - line 28 - int rndIndex = 61
+Test4.java - line 30 - int temp = int[] totalArray[61] = 6
+Test4.java - line 32 - int[] totalArray[61] = totalArray[51] = 49
+Test4.java - line 34 - int[] totalArray[51] = temp = 6
+Test4.java - line 26 - int i = 52
+Test4.java - line 28 - int rndIndex = 36
+Test4.java - line 30 - int temp = int[] totalArray[36] = 5
+Test4.java - line 32 - int[] totalArray[36] = totalArray[52] = 53
+Test4.java - line 34 - int[] totalArray[52] = temp = 5
+Test4.java - line 26 - int i = 53
+Test4.java - line 28 - int rndIndex = 95
+Test4.java - line 30 - int temp = int[] totalArray[95] = 96
+Test4.java - line 32 - int[] totalArray[95] = totalArray[53] = 19
+Test4.java - line 34 - int[] totalArray[53] = temp = 96
+Test4.java - line 26 - int i = 54
+Test4.java - line 28 - int rndIndex = 22
+Test4.java - line 30 - int temp = int[] totalArray[22] = 15
+Test4.java - line 32 - int[] totalArray[22] = totalArray[54] = 55
+Test4.java - line 34 - int[] totalArray[54] = temp = 15
+Test4.java - line 26 - int i = 55
+Test4.java - line 28 - int rndIndex = 91
+Test4.java - line 30 - int temp = int[] totalArray[91] = 92
+Test4.java - line 32 - int[] totalArray[91] = totalArray[55] = 56
+Test4.java - line 34 - int[] totalArray[55] = temp = 92
+Test4.java - line 26 - int i = 56
+Test4.java - line 28 - int rndIndex = 27
+Test4.java - line 30 - int temp = int[] totalArray[27] = 34
+Test4.java - line 32 - int[] totalArray[27] = totalArray[56] = 57
+Test4.java - line 34 - int[] totalArray[56] = temp = 34
+Test4.java - line 26 - int i = 57
+Test4.java - line 28 - int rndIndex = 23
+Test4.java - line 30 - int temp = int[] totalArray[23] = 39
+Test4.java - line 32 - int[] totalArray[23] = totalArray[57] = 18
+Test4.java - line 34 - int[] totalArray[57] = temp = 39
+Test4.java - line 26 - int i = 58
+Test4.java - line 28 - int rndIndex = 67
+Test4.java - line 30 - int temp = int[] totalArray[67] = 68
+Test4.java - line 32 - int[] totalArray[67] = totalArray[58] = 47
+Test4.java - line 34 - int[] totalArray[58] = temp = 68
+Test4.java - line 26 - int i = 59
+Test4.java - line 28 - int rndIndex = 25
+Test4.java - line 30 - int temp = int[] totalArray[25] = 81
+Test4.java - line 32 - int[] totalArray[25] = totalArray[59] = 60
+Test4.java - line 34 - int[] totalArray[59] = temp = 81
+Test4.java - line 26 - int i = 60
+Test4.java - line 28 - int rndIndex = 34
+Test4.java - line 30 - int temp = int[] totalArray[34] = 46
+Test4.java - line 32 - int[] totalArray[34] = totalArray[60] = 61
+Test4.java - line 34 - int[] totalArray[60] = temp = 46
+Test4.java - line 26 - int i = 61
+Test4.java - line 28 - int rndIndex = 22
+Test4.java - line 30 - int temp = int[] totalArray[22] = 55
+Test4.java - line 32 - int[] totalArray[22] = totalArray[61] = 49
+Test4.java - line 34 - int[] totalArray[61] = temp = 55
+Test4.java - line 26 - int i = 62
+Test4.java - line 28 - int rndIndex = 92
+Test4.java - line 30 - int temp = int[] totalArray[92] = 93
+Test4.java - line 32 - int[] totalArray[92] = totalArray[62] = 13
+Test4.java - line 34 - int[] totalArray[62] = temp = 93
+Test4.java - line 26 - int i = 63
+Test4.java - line 28 - int rndIndex = 20
+Test4.java - line 30 - int temp = int[] totalArray[20] = 54
+Test4.java - line 32 - int[] totalArray[20] = totalArray[63] = 3
+Test4.java - line 34 - int[] totalArray[63] = temp = 54
+Test4.java - line 26 - int i = 64
+Test4.java - line 28 - int rndIndex = 85
+Test4.java - line 30 - int temp = int[] totalArray[85] = 86
+Test4.java - line 32 - int[] totalArray[85] = totalArray[64] = 65
+Test4.java - line 34 - int[] totalArray[64] = temp = 86
+Test4.java - line 26 - int i = 65
+Test4.java - line 28 - int rndIndex = 88
+Test4.java - line 30 - int temp = int[] totalArray[88] = 43
+Test4.java - line 32 - int[] totalArray[88] = totalArray[65] = 66
+Test4.java - line 34 - int[] totalArray[65] = temp = 43
+Test4.java - line 26 - int i = 66
+Test4.java - line 28 - int rndIndex = 86
+Test4.java - line 30 - int temp = int[] totalArray[86] = 87
+Test4.java - line 32 - int[] totalArray[86] = totalArray[66] = 67
+Test4.java - line 34 - int[] totalArray[66] = temp = 87
+Test4.java - line 26 - int i = 67
+Test4.java - line 28 - int rndIndex = 12
+Test4.java - line 30 - int temp = int[] totalArray[12] = 14
+Test4.java - line 32 - int[] totalArray[12] = totalArray[67] = 47
+Test4.java - line 34 - int[] totalArray[67] = temp = 14
+Test4.java - line 26 - int i = 68
+Test4.java - line 28 - int rndIndex = 6
+Test4.java - line 30 - int temp = int[] totalArray[6] = 62
+Test4.java - line 32 - int[] totalArray[6] = totalArray[68] = 50
+Test4.java - line 34 - int[] totalArray[68] = temp = 62
+Test4.java - line 26 - int i = 69
+Test4.java - line 28 - int rndIndex = 31
+Test4.java - line 30 - int temp = int[] totalArray[31] = 29
+Test4.java - line 32 - int[] totalArray[31] = totalArray[69] = 70
+Test4.java - line 34 - int[] totalArray[69] = temp = 29
+Test4.java - line 26 - int i = 70
+Test4.java - line 28 - int rndIndex = 4
+Test4.java - line 30 - int temp = int[] totalArray[4] = 88
+Test4.java - line 32 - int[] totalArray[4] = totalArray[70] = 71
+Test4.java - line 34 - int[] totalArray[70] = temp = 88
+Test4.java - line 26 - int i = 71
+Test4.java - line 28 - int rndIndex = 84
+Test4.java - line 30 - int temp = int[] totalArray[84] = 85
+Test4.java - line 32 - int[] totalArray[84] = totalArray[71] = 72
+Test4.java - line 34 - int[] totalArray[71] = temp = 85
+Test4.java - line 26 - int i = 72
+Test4.java - line 28 - int rndIndex = 45
+Test4.java - line 30 - int temp = int[] totalArray[45] = 12
+Test4.java - line 32 - int[] totalArray[45] = totalArray[72] = 73
+Test4.java - line 34 - int[] totalArray[72] = temp = 12
+Test4.java - line 26 - int i = 73
+Test4.java - line 28 - int rndIndex = 34
+Test4.java - line 30 - int temp = int[] totalArray[34] = 61
+Test4.java - line 32 - int[] totalArray[34] = totalArray[73] = 74
+Test4.java - line 34 - int[] totalArray[73] = temp = 61
+Test4.java - line 26 - int i = 74
+Test4.java - line 28 - int rndIndex = 47
+Test4.java - line 30 - int temp = int[] totalArray[47] = 97
+Test4.java - line 32 - int[] totalArray[47] = totalArray[74] = 75
+Test4.java - line 34 - int[] totalArray[74] = temp = 97
+Test4.java - line 26 - int i = 75
+Test4.java - line 28 - int rndIndex = 6
+Test4.java - line 30 - int temp = int[] totalArray[6] = 50
+Test4.java - line 32 - int[] totalArray[6] = totalArray[75] = 76
+Test4.java - line 34 - int[] totalArray[75] = temp = 50
+Test4.java - line 26 - int i = 76
+Test4.java - line 28 - int rndIndex = 41
+Test4.java - line 30 - int temp = int[] totalArray[41] = 63
+Test4.java - line 32 - int[] totalArray[41] = totalArray[76] = 11
+Test4.java - line 34 - int[] totalArray[76] = temp = 63
+Test4.java - line 26 - int i = 77
+Test4.java - line 28 - int rndIndex = 92
+Test4.java - line 30 - int temp = int[] totalArray[92] = 13
+Test4.java - line 32 - int[] totalArray[92] = totalArray[77] = 78
+Test4.java - line 34 - int[] totalArray[77] = temp = 13
+Test4.java - line 26 - int i = 78
+Test4.java - line 28 - int rndIndex = 23
+Test4.java - line 30 - int temp = int[] totalArray[23] = 18
+Test4.java - line 32 - int[] totalArray[23] = totalArray[78] = 24
+Test4.java - line 34 - int[] totalArray[78] = temp = 18
+Test4.java - line 26 - int i = 79
+Test4.java - line 28 - int rndIndex = 20
+Test4.java - line 30 - int temp = int[] totalArray[20] = 3
+Test4.java - line 32 - int[] totalArray[20] = totalArray[79] = 80
+Test4.java - line 34 - int[] totalArray[79] = temp = 3
+Test4.java - line 26 - int i = 80
+Test4.java - line 28 - int rndIndex = 98
+Test4.java - line 30 - int temp = int[] totalArray[98] = 45
+Test4.java - line 32 - int[] totalArray[98] = totalArray[80] = 26
+Test4.java - line 34 - int[] totalArray[80] = temp = 45
+Test4.java - line 26 - int i = 81
+Test4.java - line 28 - int rndIndex = 93
+Test4.java - line 30 - int temp = int[] totalArray[93] = 94
+Test4.java - line 32 - int[] totalArray[93] = totalArray[81] = 82
+Test4.java - line 34 - int[] totalArray[81] = temp = 94
+Test4.java - line 26 - int i = 82
+Test4.java - line 28 - int rndIndex = 87
+Test4.java - line 30 - int temp = int[] totalArray[87] = 32
+Test4.java - line 32 - int[] totalArray[87] = totalArray[82] = 83
+Test4.java - line 34 - int[] totalArray[82] = temp = 32
+Test4.java - line 26 - int i = 83
+Test4.java - line 28 - int rndIndex = 6
+Test4.java - line 30 - int temp = int[] totalArray[6] = 76
+Test4.java - line 32 - int[] totalArray[6] = totalArray[83] = 84
+Test4.java - line 34 - int[] totalArray[83] = temp = 76
+Test4.java - line 26 - int i = 84
+Test4.java - line 28 - int rndIndex = 44
+Test4.java - line 30 - int temp = int[] totalArray[44] = 99
+Test4.java - line 32 - int[] totalArray[44] = totalArray[84] = 72
+Test4.java - line 34 - int[] totalArray[84] = temp = 99
+Test4.java - line 26 - int i = 85
+Test4.java - line 28 - int rndIndex = 50
+Test4.java - line 30 - int temp = int[] totalArray[50] = 98
+Test4.java - line 32 - int[] totalArray[50] = totalArray[85] = 65
+Test4.java - line 34 - int[] totalArray[85] = temp = 98
+Test4.java - line 26 - int i = 86
+Test4.java - line 28 - int rndIndex = 18
+Test4.java - line 30 - int temp = int[] totalArray[18] = 33
+Test4.java - line 32 - int[] totalArray[18] = totalArray[86] = 67
+Test4.java - line 34 - int[] totalArray[86] = temp = 33
+Test4.java - line 26 - int i = 87
+Test4.java - line 28 - int rndIndex = 32
+Test4.java - line 30 - int temp = int[] totalArray[32] = 22
+Test4.java - line 32 - int[] totalArray[32] = totalArray[87] = 83
+Test4.java - line 34 - int[] totalArray[87] = temp = 22
+Test4.java - line 26 - int i = 88
+Test4.java - line 28 - int rndIndex = 10
+Test4.java - line 30 - int temp = int[] totalArray[10] = 77
+Test4.java - line 32 - int[] totalArray[10] = totalArray[88] = 66
+Test4.java - line 34 - int[] totalArray[88] = temp = 77
+Test4.java - line 26 - int i = 89
+Test4.java - line 28 - int rndIndex = 14
+Test4.java - line 30 - int temp = int[] totalArray[14] = 28
+Test4.java - line 32 - int[] totalArray[14] = totalArray[89] = 90
+Test4.java - line 34 - int[] totalArray[89] = temp = 28
+Test4.java - line 26 - int i = 90
+Test4.java - line 28 - int rndIndex = 42
+Test4.java - line 30 - int temp = int[] totalArray[42] = 89
+Test4.java - line 32 - int[] totalArray[42] = totalArray[90] = 91
+Test4.java - line 34 - int[] totalArray[90] = temp = 89
+Test4.java - line 26 - int i = 91
+Test4.java - line 28 - int rndIndex = 33
+Test4.java - line 30 - int temp = int[] totalArray[33] = 69
+Test4.java - line 32 - int[] totalArray[33] = totalArray[91] = 56
+Test4.java - line 34 - int[] totalArray[91] = temp = 69
+Test4.java - line 26 - int i = 92
+Test4.java - line 28 - int rndIndex = 51
+Test4.java - line 30 - int temp = int[] totalArray[51] = 6
+Test4.java - line 32 - int[] totalArray[51] = totalArray[92] = 78
+Test4.java - line 34 - int[] totalArray[92] = temp = 6
+Test4.java - line 26 - int i = 93
+Test4.java - line 28 - int rndIndex = 1
+Test4.java - line 30 - int temp = int[] totalArray[1] = 37
+Test4.java - line 32 - int[] totalArray[1] = totalArray[93] = 82
+Test4.java - line 34 - int[] totalArray[93] = temp = 37
+Test4.java - line 26 - int i = 94
+Test4.java - line 28 - int rndIndex = 18
+Test4.java - line 30 - int temp = int[] totalArray[18] = 67
+Test4.java - line 32 - int[] totalArray[18] = totalArray[94] = 95
+Test4.java - line 34 - int[] totalArray[94] = temp = 67
+Test4.java - line 26 - int i = 95
+Test4.java - line 28 - int rndIndex = 82
+Test4.java - line 30 - int temp = int[] totalArray[82] = 32
+Test4.java - line 32 - int[] totalArray[82] = totalArray[95] = 19
+Test4.java - line 34 - int[] totalArray[95] = temp = 32
+Test4.java - line 26 - int i = 96
+Test4.java - line 28 - int rndIndex = 13
+Test4.java - line 30 - int temp = int[] totalArray[13] = 42
+Test4.java - line 32 - int[] totalArray[13] = totalArray[96] = 1
+Test4.java - line 34 - int[] totalArray[96] = temp = 42
+Test4.java - line 26 - int i = 97
+Test4.java - line 28 - int rndIndex = 49
+Test4.java - line 30 - int temp = int[] totalArray[49] = 23
+Test4.java - line 32 - int[] totalArray[49] = totalArray[97] = 41
+Test4.java - line 34 - int[] totalArray[97] = temp = 23
+Test4.java - line 26 - int i = 98
+Test4.java - line 28 - int rndIndex = 51
+Test4.java - line 30 - int temp = int[] totalArray[51] = 78
+Test4.java - line 32 - int[] totalArray[51] = totalArray[98] = 26
+Test4.java - line 34 - int[] totalArray[98] = temp = 78
+Test4.java - line 26 - int i = 99
+Test4.java - line 28 - int rndIndex = 20
+Test4.java - line 30 - int temp = int[] totalArray[20] = 80
+Test4.java - line 32 - int[] totalArray[20] = totalArray[99] = 20
+Test4.java - line 34 - int[] totalArray[99] = temp = 80
+Test4.java - line 40 - int i = 0
+Test4.java - line 42 - map.get(16) = int[] totalArray[0] = 16
+Test4.java - line 40 - int i = 1
+Test4.java - line 42 - map.get(82) = int[] totalArray[1] = 82
+Test4.java - line 40 - int i = 2
+Test4.java - line 42 - map.get(64) = int[] totalArray[2] = 64
+Test4.java - line 40 - int i = 3
+Test4.java - line 42 - map.get(25) = int[] totalArray[3] = 25
+Test4.java - line 40 - int i = 4
+Test4.java - line 42 - map.get(71) = int[] totalArray[4] = 71
+Test4.java - line 40 - int i = 5
+Test4.java - line 42 - map.get(30) = int[] totalArray[5] = 30
+Test4.java - line 40 - int i = 6
+Test4.java - line 42 - map.get(84) = int[] totalArray[6] = 84
+Test4.java - line 40 - int i = 7
+Test4.java - line 42 - map.get(58) = int[] totalArray[7] = 58
+Test4.java - line 40 - int i = 8
+Test4.java - line 42 - map.get(59) = int[] totalArray[8] = 59
+Test4.java - line 40 - int i = 9
+Test4.java - line 42 - map.get(100) = int[] totalArray[9] = 100
+Test4.java - line 40 - int i = 10
+Test4.java - line 42 - map.get(66) = int[] totalArray[10] = 66
+Test4.java - line 40 - int i = 11
+Test4.java - line 42 - map.get(48) = int[] totalArray[11] = 48
+Test4.java - line 40 - int i = 12
+Test4.java - line 42 - map.get(47) = int[] totalArray[12] = 47
+Test4.java - line 40 - int i = 13
+Test4.java - line 42 - map.get(1) = int[] totalArray[13] = 1
+Test4.java - line 40 - int i = 14
+Test4.java - line 42 - map.get(90) = int[] totalArray[14] = 90
+Test4.java - line 40 - int i = 15
+Test4.java - line 42 - map.get(35) = int[] totalArray[15] = 35
+Test4.java - line 40 - int i = 16
+Test4.java - line 42 - map.get(79) = int[] totalArray[16] = 79
+Test4.java - line 40 - int i = 17
+Test4.java - line 42 - map.get(36) = int[] totalArray[17] = 36
+Test4.java - line 40 - int i = 18
+Test4.java - line 42 - map.get(95) = int[] totalArray[18] = 95
+Test4.java - line 40 - int i = 19
+Test4.java - line 42 - map.get(10) = int[] totalArray[19] = 10
+Test4.java - line 40 - int i = 20
+Test4.java - line 42 - map.get(20) = int[] totalArray[20] = 20
+Test4.java - line 40 - int i = 21
+Test4.java - line 42 - map.get(27) = int[] totalArray[21] = 27
+Test4.java - line 40 - int i = 22
+Test4.java - line 42 - map.get(49) = int[] totalArray[22] = 49
+Test4.java - line 40 - int i = 23
+Test4.java - line 42 - map.get(24) = int[] totalArray[23] = 24
+Test4.java - line 40 - int i = 24
+Test4.java - line 42 - map.get(4) = int[] totalArray[24] = 4
+Test4.java - line 40 - int i = 25
+Test4.java - line 42 - map.get(60) = int[] totalArray[25] = 60
+Test4.java - line 40 - int i = 26
+Test4.java - line 42 - map.get(21) = int[] totalArray[26] = 21
+Test4.java - line 40 - int i = 27
+Test4.java - line 42 - map.get(57) = int[] totalArray[27] = 57
+Test4.java - line 40 - int i = 28
+Test4.java - line 42 - map.get(2) = int[] totalArray[28] = 2
+Test4.java - line 40 - int i = 29
+Test4.java - line 42 - map.get(40) = int[] totalArray[29] = 40
+Test4.java - line 40 - int i = 30
+Test4.java - line 42 - map.get(44) = int[] totalArray[30] = 44
+Test4.java - line 40 - int i = 31
+Test4.java - line 42 - map.get(70) = int[] totalArray[31] = 70
+Test4.java - line 40 - int i = 32
+Test4.java - line 42 - map.get(83) = int[] totalArray[32] = 83
+Test4.java - line 40 - int i = 33
+Test4.java - line 42 - map.get(56) = int[] totalArray[33] = 56
+Test4.java - line 40 - int i = 34
+Test4.java - line 42 - map.get(74) = int[] totalArray[34] = 74
+Test4.java - line 40 - int i = 35
+Test4.java - line 42 - map.get(38) = int[] totalArray[35] = 38
+Test4.java - line 40 - int i = 36
+Test4.java - line 42 - map.get(53) = int[] totalArray[36] = 53
+Test4.java - line 40 - int i = 37
+Test4.java - line 42 - map.get(31) = int[] totalArray[37] = 31
+Test4.java - line 40 - int i = 38
+Test4.java - line 42 - map.get(17) = int[] totalArray[38] = 17
+Test4.java - line 40 - int i = 39
+Test4.java - line 42 - map.get(7) = int[] totalArray[39] = 7
+Test4.java - line 40 - int i = 40
+Test4.java - line 42 - map.get(51) = int[] totalArray[40] = 51
+Test4.java - line 40 - int i = 41
+Test4.java - line 42 - map.get(11) = int[] totalArray[41] = 11
+Test4.java - line 40 - int i = 42
+Test4.java - line 42 - map.get(91) = int[] totalArray[42] = 91
+Test4.java - line 40 - int i = 43
+Test4.java - line 42 - map.get(8) = int[] totalArray[43] = 8
+Test4.java - line 40 - int i = 44
+Test4.java - line 42 - map.get(72) = int[] totalArray[44] = 72
+Test4.java - line 40 - int i = 45
+Test4.java - line 42 - map.get(73) = int[] totalArray[45] = 73
+Test4.java - line 40 - int i = 46
+Test4.java - line 42 - map.get(9) = int[] totalArray[46] = 9
+Test4.java - line 40 - int i = 47
+Test4.java - line 42 - map.get(75) = int[] totalArray[47] = 75
+Test4.java - line 40 - int i = 48
+Test4.java - line 42 - map.get(52) = int[] totalArray[48] = 52
+Test4.java - line 40 - int i = 49
+Test4.java - line 42 - map.get(41) = int[] totalArray[49] = 41
+Test4.java - line 40 - int i = 50
+Test4.java - line 42 - map.get(65) = int[] totalArray[50] = 65
+Test4.java - line 40 - int i = 51
+Test4.java - line 42 - map.get(26) = int[] totalArray[51] = 26
+Test4.java - line 40 - int i = 52
+Test4.java - line 42 - map.get(5) = int[] totalArray[52] = 5
+Test4.java - line 40 - int i = 53
+Test4.java - line 42 - map.get(96) = int[] totalArray[53] = 96
+Test4.java - line 40 - int i = 54
+Test4.java - line 42 - map.get(15) = int[] totalArray[54] = 15
+Test4.java - line 40 - int i = 55
+Test4.java - line 42 - map.get(92) = int[] totalArray[55] = 92
+Test4.java - line 40 - int i = 56
+Test4.java - line 42 - map.get(34) = int[] totalArray[56] = 34
+Test4.java - line 40 - int i = 57
+Test4.java - line 42 - map.get(39) = int[] totalArray[57] = 39
+Test4.java - line 40 - int i = 58
+Test4.java - line 42 - map.get(68) = int[] totalArray[58] = 68
+Test4.java - line 40 - int i = 59
+Test4.java - line 42 - map.get(81) = int[] totalArray[59] = 81
+Test4.java - line 40 - int i = 60
+Test4.java - line 42 - map.get(46) = int[] totalArray[60] = 46
+Test4.java - line 40 - int i = 61
+Test4.java - line 42 - map.get(55) = int[] totalArray[61] = 55
+Test4.java - line 40 - int i = 62
+Test4.java - line 42 - map.get(93) = int[] totalArray[62] = 93
+Test4.java - line 40 - int i = 63
+Test4.java - line 42 - map.get(54) = int[] totalArray[63] = 54
+Test4.java - line 40 - int i = 64
+Test4.java - line 42 - map.get(86) = int[] totalArray[64] = 86
+Test4.java - line 40 - int i = 65
+Test4.java - line 42 - map.get(43) = int[] totalArray[65] = 43
+Test4.java - line 40 - int i = 66
+Test4.java - line 42 - map.get(87) = int[] totalArray[66] = 87
+Test4.java - line 40 - int i = 67
+Test4.java - line 42 - map.get(14) = int[] totalArray[67] = 14
+Test4.java - line 40 - int i = 68
+Test4.java - line 42 - map.get(62) = int[] totalArray[68] = 62
+Test4.java - line 40 - int i = 69
+Test4.java - line 42 - map.get(29) = int[] totalArray[69] = 29
+Test4.java - line 40 - int i = 70
+Test4.java - line 42 - map.get(88) = int[] totalArray[70] = 88
+Test4.java - line 40 - int i = 71
+Test4.java - line 42 - map.get(85) = int[] totalArray[71] = 85
+Test4.java - line 40 - int i = 72
+Test4.java - line 42 - map.get(12) = int[] totalArray[72] = 12
+Test4.java - line 40 - int i = 73
+Test4.java - line 42 - map.get(61) = int[] totalArray[73] = 61
+Test4.java - line 40 - int i = 74
+Test4.java - line 42 - map.get(97) = int[] totalArray[74] = 97
+Test4.java - line 40 - int i = 75
+Test4.java - line 42 - map.get(50) = int[] totalArray[75] = 50
+Test4.java - line 40 - int i = 76
+Test4.java - line 42 - map.get(63) = int[] totalArray[76] = 63
+Test4.java - line 40 - int i = 77
+Test4.java - line 42 - map.get(13) = int[] totalArray[77] = 13
+Test4.java - line 40 - int i = 78
+Test4.java - line 42 - map.get(18) = int[] totalArray[78] = 18
+Test4.java - line 40 - int i = 79
+Test4.java - line 42 - map.get(3) = int[] totalArray[79] = 3
+Test4.java - line 40 - int i = 80
+Test4.java - line 42 - map.get(45) = int[] totalArray[80] = 45
+Test4.java - line 40 - int i = 81
+Test4.java - line 42 - map.get(94) = int[] totalArray[81] = 94
+Test4.java - line 40 - int i = 82
+Test4.java - line 42 - map.get(19) = int[] totalArray[82] = 19
+Test4.java - line 40 - int i = 83
+Test4.java - line 42 - map.get(76) = int[] totalArray[83] = 76
+Test4.java - line 40 - int i = 84
+Test4.java - line 42 - map.get(99) = int[] totalArray[84] = 99
+Test4.java - line 40 - int i = 85
+Test4.java - line 42 - map.get(98) = int[] totalArray[85] = 98
+Test4.java - line 40 - int i = 86
+Test4.java - line 42 - map.get(33) = int[] totalArray[86] = 33
+Test4.java - line 40 - int i = 87
+Test4.java - line 42 - map.get(22) = int[] totalArray[87] = 22
+Test4.java - line 40 - int i = 88
+Test4.java - line 42 - map.get(77) = int[] totalArray[88] = 77
+Test4.java - line 40 - int i = 89
+Test4.java - line 42 - map.get(28) = int[] totalArray[89] = 28
+Test4.java - line 40 - int i = 90
+Test4.java - line 42 - map.get(89) = int[] totalArray[90] = 89
+Test4.java - line 40 - int i = 91
+Test4.java - line 42 - map.get(69) = int[] totalArray[91] = 69
+Test4.java - line 40 - int i = 92
+Test4.java - line 42 - map.get(6) = int[] totalArray[92] = 6
+Test4.java - line 40 - int i = 93
+Test4.java - line 42 - map.get(37) = int[] totalArray[93] = 37
+Test4.java - line 40 - int i = 94
+Test4.java - line 42 - map.get(67) = int[] totalArray[94] = 67
+Test4.java - line 40 - int i = 95
+Test4.java - line 42 - map.get(32) = int[] totalArray[95] = 32
+Test4.java - line 40 - int i = 96
+Test4.java - line 42 - map.get(42) = int[] totalArray[96] = 42
+Test4.java - line 40 - int i = 97
+Test4.java - line 42 - map.get(23) = int[] totalArray[97] = 23
+Test4.java - line 40 - int i = 98
+Test4.java - line 42 - map.get(78) = int[] totalArray[98] = 78
+Test4.java - line 40 - int i = 99
+Test4.java - line 42 - map.get(80) = int[] totalArray[99] = 80
+Test4.java - line 46 - int i = 0
+Test4.java - line 48 - totalArray[0] = map.get(1) = 1
+Test4.java - line 46 - int i = 1
+Test4.java - line 48 - totalArray[1] = map.get(2) = 2
+Test4.java - line 46 - int i = 2
+Test4.java - line 48 - totalArray[2] = map.get(3) = 3
+Test4.java - line 46 - int i = 3
+Test4.java - line 48 - totalArray[3] = map.get(4) = 4
+Test4.java - line 46 - int i = 4
+Test4.java - line 48 - totalArray[4] = map.get(5) = 5
+Test4.java - line 46 - int i = 5
+Test4.java - line 48 - totalArray[5] = map.get(6) = 6
+Test4.java - line 46 - int i = 6
+Test4.java - line 48 - totalArray[6] = map.get(7) = 7
+Test4.java - line 46 - int i = 7
+Test4.java - line 48 - totalArray[7] = map.get(8) = 8
+Test4.java - line 46 - int i = 8
+Test4.java - line 48 - totalArray[8] = map.get(9) = 9
+Test4.java - line 46 - int i = 9
+Test4.java - line 48 - totalArray[9] = map.get(10) = 10
+Test4.java - line 46 - int i = 10
+Test4.java - line 48 - totalArray[10] = map.get(11) = 11
+Test4.java - line 46 - int i = 11
+Test4.java - line 48 - totalArray[11] = map.get(12) = 12
+Test4.java - line 46 - int i = 12
+Test4.java - line 48 - totalArray[12] = map.get(13) = 13
+Test4.java - line 46 - int i = 13
+Test4.java - line 48 - totalArray[13] = map.get(14) = 14
+Test4.java - line 46 - int i = 14
+Test4.java - line 48 - totalArray[14] = map.get(15) = 15
+Test4.java - line 46 - int i = 15
+Test4.java - line 48 - totalArray[15] = map.get(16) = 16
+Test4.java - line 46 - int i = 16
+Test4.java - line 48 - totalArray[16] = map.get(17) = 17
+Test4.java - line 46 - int i = 17
+Test4.java - line 48 - totalArray[17] = map.get(18) = 18
+Test4.java - line 46 - int i = 18
+Test4.java - line 48 - totalArray[18] = map.get(19) = 19
+Test4.java - line 46 - int i = 19
+Test4.java - line 48 - totalArray[19] = map.get(20) = 20
+Test4.java - line 46 - int i = 20
+Test4.java - line 48 - totalArray[20] = map.get(21) = 21
+Test4.java - line 46 - int i = 21
+Test4.java - line 48 - totalArray[21] = map.get(22) = 22
+Test4.java - line 46 - int i = 22
+Test4.java - line 48 - totalArray[22] = map.get(23) = 23
+Test4.java - line 46 - int i = 23
+Test4.java - line 48 - totalArray[23] = map.get(24) = 24
+Test4.java - line 46 - int i = 24
+Test4.java - line 48 - totalArray[24] = map.get(25) = 25
+Test4.java - line 46 - int i = 25
+Test4.java - line 48 - totalArray[25] = map.get(26) = 26
+Test4.java - line 46 - int i = 26
+Test4.java - line 48 - totalArray[26] = map.get(27) = 27
+Test4.java - line 46 - int i = 27
+Test4.java - line 48 - totalArray[27] = map.get(28) = 28
+Test4.java - line 46 - int i = 28
+Test4.java - line 48 - totalArray[28] = map.get(29) = 29
+Test4.java - line 46 - int i = 29
+Test4.java - line 48 - totalArray[29] = map.get(30) = 30
+Test4.java - line 46 - int i = 30
+Test4.java - line 48 - totalArray[30] = map.get(31) = 31
+Test4.java - line 46 - int i = 31
+Test4.java - line 48 - totalArray[31] = map.get(32) = 32
+Test4.java - line 46 - int i = 32
+Test4.java - line 48 - totalArray[32] = map.get(33) = 33
+Test4.java - line 46 - int i = 33
+Test4.java - line 48 - totalArray[33] = map.get(34) = 34
+Test4.java - line 46 - int i = 34
+Test4.java - line 48 - totalArray[34] = map.get(35) = 35
+Test4.java - line 46 - int i = 35
+Test4.java - line 48 - totalArray[35] = map.get(36) = 36
+Test4.java - line 46 - int i = 36
+Test4.java - line 48 - totalArray[36] = map.get(37) = 37
+Test4.java - line 46 - int i = 37
+Test4.java - line 48 - totalArray[37] = map.get(38) = 38
+Test4.java - line 46 - int i = 38
+Test4.java - line 48 - totalArray[38] = map.get(39) = 39
+Test4.java - line 46 - int i = 39
+Test4.java - line 48 - totalArray[39] = map.get(40) = 40
+Test4.java - line 46 - int i = 40
+Test4.java - line 48 - totalArray[40] = map.get(41) = 41
+Test4.java - line 46 - int i = 41
+Test4.java - line 48 - totalArray[41] = map.get(42) = 42
+Test4.java - line 46 - int i = 42
+Test4.java - line 48 - totalArray[42] = map.get(43) = 43
+Test4.java - line 46 - int i = 43
+Test4.java - line 48 - totalArray[43] = map.get(44) = 44
+Test4.java - line 46 - int i = 44
+Test4.java - line 48 - totalArray[44] = map.get(45) = 45
+Test4.java - line 46 - int i = 45
+Test4.java - line 48 - totalArray[45] = map.get(46) = 46
+Test4.java - line 46 - int i = 46
+Test4.java - line 48 - totalArray[46] = map.get(47) = 47
+Test4.java - line 46 - int i = 47
+Test4.java - line 48 - totalArray[47] = map.get(48) = 48
+Test4.java - line 46 - int i = 48
+Test4.java - line 48 - totalArray[48] = map.get(49) = 49
+Test4.java - line 46 - int i = 49
+Test4.java - line 48 - totalArray[49] = map.get(50) = 50
+Test4.java - line 46 - int i = 50
+Test4.java - line 48 - totalArray[50] = map.get(51) = 51
+Test4.java - line 46 - int i = 51
+Test4.java - line 48 - totalArray[51] = map.get(52) = 52
+Test4.java - line 46 - int i = 52
+Test4.java - line 48 - totalArray[52] = map.get(53) = 53
+Test4.java - line 46 - int i = 53
+Test4.java - line 48 - totalArray[53] = map.get(54) = 54
+Test4.java - line 46 - int i = 54
+Test4.java - line 48 - totalArray[54] = map.get(55) = 55
+Test4.java - line 46 - int i = 55
+Test4.java - line 48 - totalArray[55] = map.get(56) = 56
+Test4.java - line 46 - int i = 56
+Test4.java - line 48 - totalArray[56] = map.get(57) = 57
+Test4.java - line 46 - int i = 57
+Test4.java - line 48 - totalArray[57] = map.get(58) = 58
+Test4.java - line 46 - int i = 58
+Test4.java - line 48 - totalArray[58] = map.get(59) = 59
+Test4.java - line 46 - int i = 59
+Test4.java - line 48 - totalArray[59] = map.get(60) = 60
+Test4.java - line 46 - int i = 60
+Test4.java - line 48 - totalArray[60] = map.get(61) = 61
+Test4.java - line 46 - int i = 61
+Test4.java - line 48 - totalArray[61] = map.get(62) = 62
+Test4.java - line 46 - int i = 62
+Test4.java - line 48 - totalArray[62] = map.get(63) = 63
+Test4.java - line 46 - int i = 63
+Test4.java - line 48 - totalArray[63] = map.get(64) = 64
+Test4.java - line 46 - int i = 64
+Test4.java - line 48 - totalArray[64] = map.get(65) = 65
+Test4.java - line 46 - int i = 65
+Test4.java - line 48 - totalArray[65] = map.get(66) = 66
+Test4.java - line 46 - int i = 66
+Test4.java - line 48 - totalArray[66] = map.get(67) = 67
+Test4.java - line 46 - int i = 67
+Test4.java - line 48 - totalArray[67] = map.get(68) = 68
+Test4.java - line 46 - int i = 68
+Test4.java - line 48 - totalArray[68] = map.get(69) = 69
+Test4.java - line 46 - int i = 69
+Test4.java - line 48 - totalArray[69] = map.get(70) = 70
+Test4.java - line 46 - int i = 70
+Test4.java - line 48 - totalArray[70] = map.get(71) = 71
+Test4.java - line 46 - int i = 71
+Test4.java - line 48 - totalArray[71] = map.get(72) = 72
+Test4.java - line 46 - int i = 72
+Test4.java - line 48 - totalArray[72] = map.get(73) = 73
+Test4.java - line 46 - int i = 73
+Test4.java - line 48 - totalArray[73] = map.get(74) = 74
+Test4.java - line 46 - int i = 74
+Test4.java - line 48 - totalArray[74] = map.get(75) = 75
+Test4.java - line 46 - int i = 75
+Test4.java - line 48 - totalArray[75] = map.get(76) = 76
+Test4.java - line 46 - int i = 76
+Test4.java - line 48 - totalArray[76] = map.get(77) = 77
+Test4.java - line 46 - int i = 77
+Test4.java - line 48 - totalArray[77] = map.get(78) = 78
+Test4.java - line 46 - int i = 78
+Test4.java - line 48 - totalArray[78] = map.get(79) = 79
+Test4.java - line 46 - int i = 79
+Test4.java - line 48 - totalArray[79] = map.get(80) = 80
+Test4.java - line 46 - int i = 80
+Test4.java - line 48 - totalArray[80] = map.get(81) = 81
+Test4.java - line 46 - int i = 81
+Test4.java - line 48 - totalArray[81] = map.get(82) = 82
+Test4.java - line 46 - int i = 82
+Test4.java - line 48 - totalArray[82] = map.get(83) = 83
+Test4.java - line 46 - int i = 83
+Test4.java - line 48 - totalArray[83] = map.get(84) = 84
+Test4.java - line 46 - int i = 84
+Test4.java - line 48 - totalArray[84] = map.get(85) = 85
+Test4.java - line 46 - int i = 85
+Test4.java - line 48 - totalArray[85] = map.get(86) = 86
+Test4.java - line 46 - int i = 86
+Test4.java - line 48 - totalArray[86] = map.get(87) = 87
+Test4.java - line 46 - int i = 87
+Test4.java - line 48 - totalArray[87] = map.get(88) = 88
+Test4.java - line 46 - int i = 88
+Test4.java - line 48 - totalArray[88] = map.get(89) = 89
+Test4.java - line 46 - int i = 89
+Test4.java - line 48 - totalArray[89] = map.get(90) = 90
+Test4.java - line 46 - int i = 90
+Test4.java - line 48 - totalArray[90] = map.get(91) = 91
+Test4.java - line 46 - int i = 91
+Test4.java - line 48 - totalArray[91] = map.get(92) = 92
+Test4.java - line 46 - int i = 92
+Test4.java - line 48 - totalArray[92] = map.get(93) = 93
+Test4.java - line 46 - int i = 93
+Test4.java - line 48 - totalArray[93] = map.get(94) = 94
+Test4.java - line 46 - int i = 94
+Test4.java - line 48 - totalArray[94] = map.get(95) = 95
+Test4.java - line 46 - int i = 95
+Test4.java - line 48 - totalArray[95] = map.get(96) = 96
+Test4.java - line 46 - int i = 96
+Test4.java - line 48 - totalArray[96] = map.get(97) = 97
+Test4.java - line 46 - int i = 97
+Test4.java - line 48 - totalArray[97] = map.get(98) = 98
+Test4.java - line 46 - int i = 98
+Test4.java - line 48 - totalArray[98] = map.get(99) = 99
+Test4.java - line 46 - int i = 99
+Test4.java - line 48 - totalArray[99] = map.get(100) = 100

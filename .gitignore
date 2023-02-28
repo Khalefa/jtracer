@@ -1,3 +1,5 @@
 *.class
 .DS_Store
 target/
+code/examples/Test5.java
+code/examples/Test2.java

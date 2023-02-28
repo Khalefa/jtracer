@@ -7,7 +7,16 @@
 -run the following in the project folder
 
 		docker run   -it --mount type=bind,source=$PWD/code,target=/code mvn /bin/bash
-		cd /code
+		cd code
+
+-OR-
+
+		docker run   -it --mount type=bind,source=%cd%/code,target=/code mvn /bin/bash
+		cd code
+		(for Windows cmd)
+
+then,
+		cd code
 		mvn clean package
 
 then,
