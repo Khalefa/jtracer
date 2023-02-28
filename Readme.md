@@ -12,7 +12,6 @@
 -OR-
 
 		docker run   -it --mount type=bind,source=%cd%/code,target=/code mvn /bin/bash
-		cd code
 		(for Windows cmd)
 
 then,
